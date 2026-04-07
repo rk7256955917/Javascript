@@ -735,14 +735,189 @@
 //  }
 //  welcome();
 //  by();
-Example2-
-  var userName=;
 
-  function welcome(){
-    console.log("welcome"+userName);
-  }
-  function by(){
-    console.log("goodby"+userName);
-  }
-  welcome();
-  by();
+// JavaScript Comments-
+// JavaScript me Single Line Comment aur Multi Line Comment code ko explain karne, temporarily disable karne, aur code readable banane ke liye use hote hain.
+
+// Single Line Comment Kyu Use Karte Hai-
+// ✅ Code explain karne ke liye
+// ✅ Debugging ke liye
+// ✅ Temporary code disable karne ke liye
+// Example-
+// let a = 10;
+// // let b = 20
+// console.log(a);
+// Yaha b wala code run nahi hoga
+
+// Multi Line Comment Kyu Use Karte Hai
+
+// ✅ Long explanation likhne ke liye
+// ✅ Documentation likhne ke liye
+// ✅ Multiple lines disable karne ke liye
+/*
+let a = 10;
+let b = 20;
+let c = 30;
+*/
+
+// console.log("Hello");
+
+// Ye sab code run nahi hoga
+
+// | Single Line     | Multi Line         |
+// | --------------- | ------------------ |
+// | // use hota hai | /* */ use hota hai |
+// | One line        | Multiple lines     |
+// | Short comment   | Long comment       |
+
+// 1. if Statement
+
+// if condition check karta hai
+// Agar condition true ho to code run hota hai
+
+// Syntax-
+// if(condition){
+// code
+// }
+
+// Example -
+
+// let age = 18;
+
+// if(age >= 18){
+// console.log("You can vote");
+// }
+
+// Output-You can vote
+
+// Explanation-
+// Agar age 18 ya usse jyada hai to message show hoga
+// practice-
+// example-
+// let age=19;
+// if(age>=19){
+//   console.log("you are Adult");
+// }
+// else {
+//   console.log("You are not Adult");
+// }
+
+// let age=16;
+// if(age>=18){
+//   console.log("adult");
+// }
+// else{
+//   console.log("minor");
+// }
+// 2. if else-
+// Agar condition true ho to if run
+// Agar false ho to else run
+
+// Syntax-if(condition){
+// code
+// }
+// else{
+// code
+// }
+// Example
+
+// let age = 16;
+
+// if(age >= 18){
+// console.log("You can vote");
+// }
+// else{
+// console.log("You cannot vote");
+// }
+
+// Output-
+// You cannot vote
+
+// 3. else if- Multiple conditions check karne ke liye.
+
+// Syntax->
+
+// if(condition){
+// }
+// else if(condition){
+// }
+// else{
+// }
+// let age= 25;
+// if(age>=26){
+//   console.log("yes");
+// }
+// else if(age>=22 && age<=30 ){
+//     console.log("No");
+// }
+// else{
+//   console.log("not");
+// }
+//  let age = 55;
+//  if(age>=56){
+//   console.log("rohit");
+//  }
+//  else if(age>=55 && age<=60){
+//   console.log("raj")
+//  }
+//  else{
+//   console.log("rohan")
+//  }
+
+// let marks= 60;
+// if(marks>=60){
+//   console.log("A")
+// }
+// else if(marks>=60 && marks<=70){
+//   console.log("B")
+// }
+// else if(marks>=62 && marks<=70){
+//   console.log("c")
+// }
+// else{
+//   console.log("fail")
+// }
+// 1. switch Keyword-
+
+// switch multiple conditions check karne ke liye use hota hai
+// Ye different cases ke according code run karta hai
+
+// Syntax-
+// switch(value){
+// case 1:
+// code
+// break;
+
+// case 2:
+// code
+// break;
+
+// default:
+// code
+// }
+
+// let day=5;
+// switch(day){
+//   case 1:
+//     console.log("monday")
+//       break;
+//     case 2:
+//     console.log("tuesday")
+//     break;
+//     case 3:
+//       console.log("wednesday")
+//       break;
+//       case 4:
+//         console.log("tursday")
+//         break;
+//         default:
+//           console.log("invalid")
+// }
+// default ka used- Kyu Use Karte Hai 🤔
+
+// default use karte hain:
+
+// ✅ Jab koi case match na kare
+// ✅ Error avoid karne ke liye
+// ✅ User ko fallback message dene ke liye
+// ✅ Safe coding ke liye
