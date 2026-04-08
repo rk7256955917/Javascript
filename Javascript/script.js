@@ -980,8 +980,75 @@ let c = 30;
 // let result= add(5,7);
 // console.log(result)
 
-function test(){
-    return "hello";
-    console.log("rohit");
-}
-console.log(test());
+// function test(){
+//     return "hello";
+//     console.log("rohit");
+// }
+// console.log(test());
+
+// function test(){
+//     console.log("rohit");
+//     return "hello";
+// }
+// console.log(test());
+
+
+// function test(){
+//     console.log("hi");
+//     return ["raj","rohit"];
+// }
+// console.log(test());
+
+// function test(){
+//     console.log("hi");
+//     return "raj","rohit";
+// }
+// console.log(test());
+
+// 4. try Keyword-
+// try Kya Hota Hai-
+
+// try error handle karne ke liye use hota hai
+
+// Agar error aaye to program crash nahi hota
+
+// Syntax-
+// try{
+// code
+// }
+// catch{
+// error handle
+// }
+
+// try{
+//     console.log("hello");
+// }
+// catch{
+//     console.log("error handling");
+// }
+
+// try{
+//     let a=4;
+//     let b=4;
+//     console.log(a/b);
+// }
+// catch{
+//     console.log("error");
+// }
+
+// try{
+//     let a=5;
+//     let b=9;
+//     let c= a+b;
+//     console.log(c);
+// }
+// catch{
+//     console.log("error");
+// }
+
+// | Keyword  | Use                           |
+// | -------- | ----------------------------- |
+// | for      | loop chalane ke liye          |
+// | function | function create karne ke liye |
+// | return   | value return karne ke liye    |
+// | try      | error handle karne ke liye    |
