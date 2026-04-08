@@ -921,3 +921,67 @@ let c = 30;
 // ✅ Error avoid karne ke liye
 // ✅ User ko fallback message dene ke liye
 // ✅ Safe coding ke liye
+
+// for(let i=1; i<=10;i++){
+//     console.log(i);
+// }
+
+// for(let i=1; i<=3;i++){
+//     console.log("hello rohit")
+// }
+
+// for(let i=1; i<=2;i++){
+//     console.log("hlo raj")
+// }
+
+// 2. function Keyword
+// function Kya Hota Hai-
+//  Function code ka block hota hai jo reuse kiya ja sakta hai
+// Matlab ek baar likho, multiple baar use karo.
+
+// Syntax-
+// function functionName(){
+// code
+// }
+// example-
+// function greet(){
+//     console.log("rohit")
+// }
+// greet();
+
+// function add(a,b){
+//     return a+b;
+// }
+// sum =add(5,8);
+// console.log(sum)
+
+
+// function greet(){
+//     console.log("rakesh","rohit")
+// }
+// greet();
+ 
+// function add(a,b){
+//     return a+b;
+// }
+// sum=add(5,9);
+// console.log(sum)
+
+// 3. return Keyword-
+// return Kya Hota Hai-
+
+// return function se value wapas bhejne ke liye use hota hai
+
+// Return ke baad function stop ho jata hai.
+
+// function add(a,b){
+//     return a+b;
+// }
+// let result= add(5,7);
+// console.log(result)
+
+function test(){
+    return "hello";
+    console.log("rohit");
+}
+console.log(test());
