@@ -1052,3 +1052,117 @@ let c = 30;
 // | function | function create karne ke liye |
 // | return   | value return karne ke liye    |
 // | try      | error handle karne ke liye    |
+
+
+// var Kya Hai
+// Old JavaScript keyword
+// Function scope follow karta hai
+// Re-declare allowed
+// Reassign allowed
+// Example
+// var name = "Rohit";
+// var name = "Raj";
+
+// console.log(name);
+
+// Output-Raj
+
+// var Scope Example-
+// if(true){
+// var a = 10;
+// }
+// console.log(a);
+// Output- 10
+// Block ke bahar bhi access ho raha hai
+
+
+// 2. let-
+// let Kya Hai-
+// Modern JavaScript keyword
+// Block scope follow karta hai
+// Re-declare NOT allowed
+// Reassign allowed
+// Example
+// let name = "Rohit";
+// name = "Raj";
+// console.log(name);
+// Output- Raj
+// Reassign allowed hai ✅
+
+//  let Re-declare Example-
+// let name = "Rohit";
+// let name = "Raj";
+
+// Output- Error
+
+
+/* 3. const keyword-
+const Kya Hai-
+Constant variable
+Block scope
+Re-declare not allowed
+Reassign not allowed
+Example-
+const pi = 3.14;
+console.log(pi);
+Output-3.14 */
+
+/*const example-
+const age = 20;
+age = 25;
+Output- Error */
+
+/* const Block Scope-
+if(true){
+const a = 50;
+console.log(a);
+}
+console.log(a);
+Output-50
+      Error */
+
+ /* var vs let vs const Table-
+| Feature    | var      | let   | const |
+| ---------- | -------- | ----- | ----- |
+| Scope      | Function | Block | Block |
+| Re-declare | Yes      | No    | No    |
+| Reassign   | Yes      | Yes   | No    |
+| Modern Use | No       | Yes   | Yes   | */
+
+/*Hoisting Kyun Important Hai
+Bugs avoid karne ke liye
+Interview questions me pucha jata hai
+Execution samajhne ke liye */
+
+/*Simple Definition (Interview)-
+Temporal Dead Zone wo time hota hai jab variable hoist ho chuka hota hai lekin declare hone se pehle access nahi kar sakte.*/
+
+// Practice var,let and const.
+/*var name = "rohit";
+ var name= "raj";
+ console.log(name)*/
+
+/* var age =30;
+ age=20; 
+ console.log(age)*/
+
+//  let age=30;
+//  age=20;
+//  console.log(age)
+
+// let name=["rohit",1,3,"raj"]
+// console.log(name[0])
+// console.log(name[1])
+
+// let name="rohit";
+// let name="rohan";
+
+// console.log(name);// isme redeclered  nhi kr sakte hai but reassined kr sakte hai.
+
+const person={
+    name:"rohit"
+    
+}
+person.name="rohiot"
+console.log(person.name)
+
