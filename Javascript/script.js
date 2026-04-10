@@ -1159,10 +1159,552 @@ Temporal Dead Zone wo time hota hai jab variable hoist ho chuka hota hai lekin d
 
 // console.log(name);// isme redeclered  nhi kr sakte hai but reassined kr sakte hai.
 
-const person={
-    name:"rohit"
+// const person={
+//     name:"rohit"
     
+// }
+// person.name="rohiot"
+// console.log(person.name)
+
+// javascript operator-
+/*
+JavaScript Operators ka use values aur variables par operations perform karne ke liye hota hai.
+Simple words me:
+Operator = Action perform karne wala symbol.
+Example:-
+let a = 5;
+let b = 3;
+let sum = a + b; // + operator
+Yaha + operator hai.
+
+The Assignment Operator = assigns values
+
+The Addition Operator + adds values
+
+The Multiplication Operator * multiplies values
+
+The Comparison Operator > compares values*/
+
+/*1. Arithmetic Operators (Math Calculation)
+| Operator | Use                 | Example    |
+| -------- | ------------------- | ---------- |
+| +        | Addition            | 5 + 3 = 8  |
+| -        | Subtraction         | 5 - 3 = 2  |
+| *        | Multiplication      | 5 * 3 = 15 |
+| /        | Division            | 6 / 2 = 3  |
+| %        | Modulus (Remainder) | 5 % 2 = 1  |
+| ++       | Increment           | a++        |
+| --       | Decrement           | a--        | */
+
+// let a=4;
+// let b=8;
+// let c=a+b;
+// console.log(c)
+
+// let a=10;
+// let b=5
+// let c=a-b
+// console.log(c)
+
+/*let a=4
+let b=4
+let c=a*b
+console.log(c)*/
+
+// let a=5
+// let b=5
+// let c=a/b
+// console.log(c)
+
+// let a=5
+// let b=2
+// let c=a%b
+// console.log(c)
+
+/*Important (Interview Question)-
+
+Increment aur Decrement ke 2 types hote hain
+
+Post Increment → a++
+Pre Increment → ++a */
+//Post Increment//
+/*let a=5
+console.log(a++)
+console.log(a)
+output-5,6
+Explanation:
+Pehle value print hoti hai
+Baad me increment hota hai*/
+
+/*Pre Increment Example-
+let a = 5;
+console.log(++a); // 6
+Explanation:-
+Pehle increment hota hai
+Fir value print hoti hai*/
+
+/*
+| Type | Meaning                |
+| ---- | ---------------------- |
+| a++  | pehle use fir increase |
+| ++a  | pehle increase fir use |
+| a--  | pehle use fir decrease |
+| --a  | pehle decrease fir use |*/
+
+// Decremnet 
+/*let a=10
+console.log(--a)
+console.log(a)
+op-9,9*/
+
+/*2. Assignment Operators-
+Value assign karne ke liye use hote hain
+
+| Operator | Example |
+| -------- | ------- |
+| =        | x = 5   |
+| +=       | x += 2  |
+| -=       | x -= 2  |
+| *=       | x *= 2  |
+| /=       | x /= 2  |
+
+Example:-
+let x = 10;
+x += 5; // x = x + 5
+console.log(x); // 15*/
+
+// Practice example-
+
+/*let x=5
+x+=9
+console.log(x)*/
+
+// let x=109
+// x+=5
+// console.log(x)
+
+// let num=10;
+// num+=10; //num=num+10
+// console.log(num);  // 20
+
+// let a=10
+// a-=5
+// console.log(a)
+
+/*3. Comparison Operators-
+
+Comparison karne ke liye use hote hain
+
+| Operator | Meaning            |
+| -------- | ------------------ |
+| ==       | equal              |
+| ===      | equal value & type |
+| !=       | not equal          |
+| !==      | not equal type     |
+| >        | greater than       |
+| <        | less than          |
+| >=       | greater equal      |
+| <=       | less equal         |
+
+Example:-
+
+console.log(5 == "5");  // true
+console.log(5 === "5"); // false
+console.log(10 > 5);    // true */
+
+// let a=5
+// let b=5
+// console.log(a==b)
+
+// let a=8
+// let b="8"
+// console.log(a==b)
+
+// let a=3
+// let num="3"
+// console.log(a==num)
+
+// let by=8
+// let b="8"
+// console.log(by==b)
+
+// let a=9
+// let b="9"
+// console.log(a===b)
+
+// let num=9
+// let b="9"
+// console.log(num===b)
+
+// let a=5
+// let b=8
+// console.log(a===b)
+
+// let a=7
+// let b="8"
+// console.log(a!=b)
+
+// let a=8
+// let b=5
+// console.log(a!=b)
+
+// let a=3
+// let b=7
+// console.log(a!==b)
+
+// let a=5;
+// let b=7
+// console.log(a!==b)
+
+// let num=9
+// let b=8
+// console.log(num!==b)
+
+// let a=121
+// let b=21
+// console.log(a>b)
+
+// let a=7
+// let b=3
+// console.log(a>=b)
+
+// let a=100
+// let b=50
+// console.log(a>=b)
+
+// let a=4
+// let b=2
+// console.log(a<=b)
+// o/p- false
+
+/*4. Logical Operators- Conditions combine karne ke liye.
+| Operator | Use |   |    |
+| -------- | --- | - | -- |
+| &&       | AND |   |    |
+|          |     |   | OR |
+| !        | NOT |   |    |
+
+Example:-
+let age = 20
+console.log(age > 18 && age < 30); // true
+console.log(age > 18 || age < 10); // true
+console.log(!(age > 18)); // false*/
+
+// let age=30
+// console.log(age>25 && age<24)
+// o/p- false
+
+// let age=20
+// console.log(age>18 && age<25)
+// o/p-true
+
+// let a=5
+// let b=4
+// console.log(!(a>b))
+
+/*Short Definition:-
+NOT operator (!) condition ko reverse karta hai aur true ko false aur false ko true bana deta hai.
+
+example-
+let a=9
+let b=8
+console.log(!(a>b))*/
+
+// let age=17
+// if(age>=1){
+//     console.log("minar")
+// }
+// else{
+//     console.log("major")
+// }
+
+// let a=7
+// if(a%2==0){
+//     console.log("even no.")
+// }
+// else{
+//     console.log("odd no.")
+// }
+//  let num=7
+//  if(num%2==0){
+//     console.log("even")
+//  }
+//  else{
+//     console.log("odd")
+//  }
+
+// let num=9
+// if(num%2==0){
+//     console.log("even")
+// }
+// else{
+//     console.log("odd")
+// }
+
+// let a=15
+// let b=10
+// if(a>b){
+//     console.log(" a is greater")
+// }
+// else{
+//     console.log("b is small")
+// }
+
+// let marks=87;
+// if(marks>=80){
+//     console.log("A")
+// }
+// else if(marks>=75){
+//     console.log("B")
+// }
+// else if(marks>=70){
+//     console.log("c")
+// }
+
+/*Ternary Operator (? :) in JavaScript-
+
+Ternary Operator ek short if-else hota hai.
+Iska use condition check karke turant result dene ke liye hota hai ⚡
+
+Syntax-
+condition ? true_value : false_value
+
+Matlab:-
+Condition true → pehla value
+Condition false → dusra value */
+
+// let age=19
+//  let result= age>=18 ? "minor":"major"
+//  console.log(result)
+
+// let marks=80
+// let result=marks>=75 ? "A":"B"
+// console.log(result)
+
+// let logIn=true
+// let message= logIn>false? "welcome":"hi"
+// console.log(message)
+
+// let num=-5
+// let result= num>0? "positive":"negative"
+// console.log(result)
+
+/*break vs continue-
+| break          | continue          |
+| -------------- | ----------------- |
+| Loop stop      | Loop continue     |
+| pura loop band | sirf current skip |
+| search me use  | filter me use     |*/
+
+/*Short Definition (Interview)-
+break → loop ko stop karta hai
+continue → current iteration skip karta hai*/     // Programming me iteration = loop ka ek round / ek step.
+
+// let age=18;
+// if(age>=20 && age<=30){
+//     console.log("yes")
+// }
+
+// else{
+//     console.log("no")
+// }
+
+// if condition practice -
+
+// let age=20;
+// if(age>=18){
+//     console.log("yes")
+// }
+
+
+// let age=30
+// if(age>=32){
+//     console.log("yes")
+// }
+// else{
+//     console.log("no")
+// }
+
+// let age=20;
+// if(age>=22){
+//     console.log("yes")
+// }
+// else if(age>=18 && age<=22){
+//     console.log("hello")
+// }
+// else{
+//     console.log("hi")
+// }
+
+// let age=30
+// if(age>=32){
+//     console.log("you are eligible")
+// }
+// else{
+//     console.log("you are not eligible")
+// }
+
+// let age=34
+// if(age>=36){
+//     console.log("yes")
+// }
+// else if(age>=34 && age<=35){
+//     console.log("ha")
+// }
+// else{
+//     console.log("hello")
+// }
+
+// let age =35
+// if(age>=37){
+//     console.log("yes")
+// }
+// else{
+//     console.log("No")
+// }
+
+// let marks=75;
+// if(marks>=90){
+//     console.log("A")
+// }
+// else if(marks>=70){
+//     console.log("B")
+// }
+// else if(marks>=65){
+//     console.log("c")
+// }
+// else if(marks>=50){
+//     console.log("fail")
+// }
+
+// let marks=75;
+// if(marks>=90){
+//     console.log("A")
+// }
+// if(marks>=70){
+//     console.log("B")
+// }
+// if(marks>=65){
+//     console.log("c")
+// }
+// if(marks>=50){
+//     console.log("fail")
+// }
+
+// let day=2;
+// switch(day){
+//     case 1:
+//     console.log("sunday")
+//     break;
+//     case 2:
+//     console.log("monday")
+//     break;
+//     case 3:
+//         console.log("tuesday")
+//         break;
+//     case 4:
+//         console.log("tuesday")
+//         break;
+//         default:
+//             console.log("invalid day")
+// }
+
+// Today work 10April:-
+/*Boolean ek data type hai jisme sirf 2 values hoti hain:
+true
+false
+Boolean ka use decision lene aur condition check karne ke liye hota hai.*/
+
+/*Simple Rule
+if(true)  → if run
+if(false) → else run */
+
+// let isLogIn= false;
+// if(isLogIn){
+//     console.log("yes")
+// }
+// else{
+//     console.log("No")
+//     }
+
+// let isLogIn= true;
+// if(isLogIn){
+//     console.log("yes")
+// }
+// else{
+//     console.log("no")
+//     }
+
+// let a=8
+// let b=5
+// if(a>b){
+//     console.log("a is greater")
+// }
+// else{
+//     console.log("b is less")
+// }
+
+// JavaScript me Logical Operators ka use multiple conditions ko combine karne ke liye hota hai 🤝
+/*
+| Operator | Name | Use                 |    |                   |
+| -------- | ---- | ------------------- | -- | ----------------- |
+| &&       | AND  | Dono condition true |    |                   |
+|          |      |                     | OR | Ek condition true |
+| !        | NOT  | Reverse condition   |    |                   | */
+
+//example AND -
+// let age=10
+// if(age>=8 && age<=12){
+//     console.log("true")
+// }
+// else{
+//     console.log("false")
+// }
+// o/p-true
+
+// let age=20
+// if(age>=22 && age<=20){
+//     console.log("yes")
+// }
+// else{
+//     console.log("No")
+// }
+// o/p- no
+
+
+ // 2. OR Operator ( || )- Ek condition true ho to bhi run hoga
+
+//  let isLogIn =true
+//  let isUser= false
+//  if(isLogIn || isUser){
+//     console.log("yes")
+//  }
+//  else{
+//     console.log("NO")
+//  }
+
+/*let age=20
+let isLogIn= false
+if(age>=18 || isLogIn ){
+    console.log("yes")
 }
-person.name="rohiot"
-console.log(person.name)
+else{
+    console.log("No")
+}
+o/p- yes */
+
+/*3.NOT Operator ( ! )- Condition reverse karta hai
+
+Example
+let isLogin = false;
+if(!isLogin){
+  console.log("Please Login");
+}
+
+Output:
+Please Login
+
+Explanation:
+isLogin = false
+!false = true */
 
