@@ -1708,3 +1708,177 @@ Explanation:
 isLogin = false
 !false = true */
 
+
+//  For loop - Jab tumhe pata ho kitni baar loop chalega.
+
+// for(initialization; condition; increment){ 
+   // code
+// }
+
+ // for(let i=1; i<=5; i++){
+//     console.log(i)
+// }
+
+// for(let i=1; i<=10; i++){
+//     console.log(i)
+// }
+// for(let i=1; i<=15;i++){
+//     console.log(i)
+// }
+
+// while loop -Jab tak condition true hai tab tak chalega.
+
+// i=1;
+// while(i<=5){
+//     console.log(i);
+//     i++;
+// }
+
+// i=1;
+// while(i<=10){
+//     console.log(i)
+//     i++;
+// }
+
+// do...while Loop
+
+// 👉 Ye kam se kam 1 baar zarur chalega.
+
+// let i=1;
+// do{
+//     console.log(i);
+//     i++;
+// } while(i<=5);
+
+// let i=1;
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while(i<=10);
+
+// let i=4;
+// do{
+//     console.log(i)
+//     i++;
+// }
+// while(i<=7)
+
+// condition
+
+// let age=15;
+// let name="jhon";
+// if(age>=18){
+//     if(name=="jhon"){
+//         console.log("You can visit")
+//     }
+//     else {
+
+//  Final Simple Rule-
+// 👉 Count pata ho → for loop
+// 👉 Condition pata ho → while loop
+
+    // let i=1;
+    // while(i<=5){
+    //     console.log(i)
+    //     i++
+    // }
+
+    // for(let i=1; i<=10; i++){
+    //     console.log(i)
+    // }
+
+    // for(let i=0; i<=3; i++){
+    //     console.log("Hello world")
+    // }
+
+    // for(let i=0 ; i<=10; i++){
+    // if(i%2==0)
+    //         {
+    //         console.log(i)
+    //     }
+    // }
+
+    // for(let i=1;i<=17;i++){
+    //     if(i%2==0){
+    //         console.log(i)
+    //     }
+    // }
+// for(let i=1; i<=10;i++){
+//     console.log(5*i)
+// }
+
+/*for(let i=1; i<=10;i++){
+    if(i%2!==0){
+        console.log(i)
+    }
+}*/ // odd no. print
+
+/*for(let i=0;i<=21;i++){
+    if(i%2!=0){
+        console.log(i)
+    }
+}*/ // even no. print
+
+// let i=1
+// while(i<=10){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+//     i++
+// }
+
+// let i=1
+// while(i<=24){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+//     i++
+// } // even no. print
+
+// let i=1
+// while(i<=11){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+//     i++
+// } // even no.
+
+
+
+// let i=1
+// while(i<=30){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+//     i++
+// }
+
+// let i=1
+// while(i<=50){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+//     i++
+// }
+
+/*do...while Loop in JavaScript-
+Definition-
+do...while loop ek aisa loop hai jo code ko pehle run karta hai, fir condition check karta hai. 🔁
+👉 Matlab kam se kam 1 baar loop zaroor chalega */
+
+/*syntax-
+do{
+   code
+}while(condition);*/
+  
+let i=10
+do{
+    console.log(i)
+    i++
+} while(i<=5){
+
+}
+
+
+
