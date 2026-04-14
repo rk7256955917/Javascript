@@ -1872,13 +1872,341 @@ do{
    code
 }while(condition);*/
   
-let i=10
-do{
-    console.log(i)
-    i++
-} while(i<=5){
+// let i=1
+// do{
+//     console.log(i)
+//     i++
+// } while(i<=5){
 
-}
+// }
+
+// let i=1
+// do{
+//     console.log(i)
+//     i+=2
+// }
+// while(i<=10)
+
+// let i=1
+// do{
+//     console.log(i)
+//     i+=3
+// }
+// while(i<=10)
+
+// let password
+// do{
+//     password=12345
+//     console.log("checking passward")
+// }while(password!==12345)
+
+// let password
+// do{
+//     password=12345
+//     console.log("checking password")
+// }while(password !==12345)
+
+// let menu=1
+// do{
+//     console.log("show menu")
+//     menu++
+// }while(menu<=3)
+
+/*for...in Loop- object ke data ko access karne ke liye use hota hai */
+
+// let person={
+// name:"rohit",
+// age:32,
+// }
+// for(let key in person)
+// {
+//     console.log(person[key])
+// }
+
+// let person={
+//     name:"raj",
+//     age:23,
+// }
+// for(let key in person){
+//     console.log(key)
+// }
+
+// let person={
+//     name:"rohit",
+//     age:45,
+// }
+// for(let key in person){
+// console.log(person[key])
+// } 
+
+// let person=
+// {
+//     name:"rohan",
+//     age:30,
+//     totalPrice:100
+// }
+// for(let key in person){
+//     console.log(key,person[key])
+// }
+// let i,x='';
+// for(i=0; i<5;i=i+2){
+//     x+=i
+// }
+// console.log(x)
+
+// let i,x
+// for(i=0; i<=5;i=i+2){
+//     x+=i
+// }
+// console.log(x)
+
+// let i,x=1
+// for(i=0;i<6;i++){
+//     x+=i
+// }
+// console.log(x)
+
+// let i,x=''
+// for(i=0;i<=5;i++){
+//     x+=i
+// }
+// console.log(x)
+
+/*JavaScript break Statement-
+break ka use loop ko beech me hi stop (terminate) karne ke liye hota hai.
+
+Matlab:
+Jab condition mil jaye → loop turant band ho jata hai.*/
+
+// for(let i=0;i<=5;i++){
+//     if(i==3)
+//         break;
+//     console.log(i)
+// }
+
+// for(let i=0;i<=5;i++){
+//     if(i==2)
+//         break
+//     console.log(i)
+// }
+// let arr=[0,1,"rohit","raj"]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[1]=="rohit")
+//         break
+//     console.log(arr[i])
+// }
+
+// let arr=[0,1,2,"rohit","kumar"]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[1]=="rohit")
+//         break
+//         console.log(arr[2])
+// }
+
+// let arr=[10,20,30,40]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]==20){
+//         break
+//     }
+//     console.log(arr[i])        
+// }
+
+// for(let i=0; i<=5;i++){
+//     if(i==2){
+//         break
+//     }
+//     console.log(i)
+// }
+
+// for(let i=0;i<=5;i++){
+//     if(i==3){
+//         break
+//     }
+//     console.log(i)
+// }
 
 
+/* JavaScript Set Method Kya Hota Hai 🤔-
 
+Set JavaScript ka built-in object hai jisme unique values store hoti hain.
+Matlab → Duplicate values automatically remove ho jati hain.
+
+👉 Set me duplicate allowed nahi hota */
+
+/*Set Banane ka Syntax-
+
+let setName = new Set();*/
+
+/* Set Methods-
+| Method   | Use                        |
+| -------- | -------------------------- |
+| add()    | value add karne ke liye    |
+| delete() | value delete karne ke liye |
+| has()    | value check karne ke liye  |
+| clear()  | sab remove karne ke liye   |
+| size     | length check karne ke liye | */
+
+/*Example-
+let name = new Set()
+
+name.add("Rohit")
+name.add("Raj")
+name.add("Rohit")
+console.log(name)
+o/p-
+{"Rohit","Raj"}
+👉 Duplicate remove ho gaya */
+
+
+/*JavaScript continue kya hota hai 🤔-
+continue ka use loop me kisi ek step ko skip karne ke liye hota hai.
+Matlab → Skip karo aur next iteration pe chalo ⏭️ */
+
+// for(let i=0;i<=5;i++){
+//     if(i===3){
+//         continue
+//     }
+//     console.log(i)
+// }
+
+
+// let arr=[10,20,30,40]
+// for(let i=0;i<arr.length;i++){
+//     if(arr===30){
+//         continue
+//     }
+//     console.log(i)
+// }
+
+
+/*for...of Loop Kya Hota Hai-
+
+for...of loop values ko directly access karta hai
+
+Matlab:
+
+for loop → index se value nikalte hain
+for...of → directly value mil jati hai */
+
+/*
+Syntax-
+for(variable of iterable){
+   // code
+} */
+
+//    let arr =[10,20,30,40]
+//    for(let value of arr){
+//         console.log(value)
+//    }
+    
+// let name= "Rohit"
+// for(let value of name){
+//     console.log(value)
+// }
+
+// let arr=["rohit","rohan","raj","ragav"]
+// for(let name of arr){
+//     console.log(name)
+// }
+
+// let user=[10,20,30,40]
+// for(let value of user){
+//     console.log(value)
+// }
+
+    
+/*Difference Table-
+| Even Number         | Odd Number            |
+| ------------------- | --------------------- |
+| 2 se divide ho jata | 2 se divide nahi hota |
+| Remainder 0         | Remainder 1           |
+| 2,4,6,8             | 1,3,5,7               |
+*/
+
+
+// Even no. program-
+// for(let i=1;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+// Odd no. program-
+// for(let i=1;i<=100;i++){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+// }
+
+// let a =  Math.floor(Math.random()*100);
+
+// console.log(a);
+// function checkInput() {
+//     let input = document.getElementsByClassName("input")[0].value;
+//     if(Number(input) === a ){
+//     console.log("you have select correct num");
+    
+// }else{
+//     console.log("you have not entered right number");
+    
+// }
+// }
+
+
+/*let gameNum = Math.floor(Math.random() * 100) + 1;
+
+console.log("Game Number:", gameNum); // testing ke liye
+
+let guess = prompt("Guess the number between 1 to 100");
+
+while(guess != gameNum){
+    
+    if(guess > gameNum){
+        guess = prompt("Too High! Try again");
+    }} */
+
+
+// 👉 Control Flow = Code ka execution order control karna
+
+/* JavaScript String — 
+JavaScript me String ek data type hai jisme hum text, characters, words ya sentences store karte hain.
+
+Simple words me:-
+👉 String = Text ko store karne ka tarika */
+
+/* Most Important String Methods (Interview + Project)-
+| Method        | Use             |
+| ------------- | --------------- |
+| length        | string length   |
+| toUpperCase() | capital letter  |
+| toLowerCase() | small letter    |
+| trim()        | space remove    |
+| slice()       | part nikalna    |
+| replace()     | word change     |
+| includes()    | check word      |
+| split()       | string to array |
+*/
+
+// Practice -
+// let name="Rohit"
+// console.log(name)
+
+// let name='rohit'
+// console.log(name)
+
+// let name ='Rohit'
+// let city='delhi'
+
+// console.log(`hello ${name}${city}`) // 👉 ${} se variable add karte hain
+
+// let firstName="Rohit"
+// let lastName="Kumar"
+// console.log(firstName, lastName)
+
+// let name="Rohit"
+// console.log(name[0])
+// console.log(name[1])
+// console.log(name[2])
+
+let name="Rohit"
+console.log(name.length)
