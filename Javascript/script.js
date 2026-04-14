@@ -2208,5 +2208,106 @@ Simple words me:-
 // console.log(name[1])
 // console.log(name[2])
 
-let name="Rohit"
-console.log(name.length)
+// let name="Rohit kumar,raj kumar"
+// console.log(name.length)
+
+// let name="Rohit            "
+// console.log(name.trim())
+
+// let name="rohit"
+// console.log(name.toUpperCase())
+
+// let name="ROHIT"
+// console.log(name.toLowerCase())
+
+// let name="Rohit"
+// console.log(name.replace())
+
+// let name="Rohit kumar"
+// let result= name.split(" ")
+// console.log(result)
+
+// let name="Apple Grapes Bnana"
+// let result= name.split(" ")
+// console.log(result)
+
+// let name="Rohit Raj Rohan"
+// let result=name.includes("Raj")
+// console.log(result);
+
+// let fruits="banana apple papaya"
+// let results=fruits.includes("apple")
+// console.log(results)
+
+// let name ="Rakesh kumar"
+// let result=name.reduce(" ")
+// console.log(result)
+
+// let name="Rohit Raj Rohan"
+// console.log(name.includes("Raj"))
+
+// 👉 indexOf() ki priority sabse zyada hoti hai
+// 👉 search() advanced cases me use hota hai
+
+// let name="Rohit Raj Mohan"
+// console.log(name.includes("Raj"))
+
+
+// 👉 Number JavaScript ka data type hai jo numeric values store karta hai
+
+// const score= 400
+// console.log(score)
+// const balence =new Number(100)
+// console.log(balence)
+
+// const totalPrice=400
+// const balence=new Number(200)
+// console.log(totalPrice)
+// console.log(balence)
+
+// const score=100
+// const balence=new Number(300)
+// console.log(score.toString().length)
+// console.log(balence.toString().length)
+
+// const number=123.987
+// console.log(number.toPrecision(3))
+
+// console.log(Math.round())
+// console.log(Math.random())
+// console.log(Math.floor(Math.random()*10)+1)
+
+// const min=10
+// const max=20
+// console.log(Math.floor(Math.random()*(max-min+1))+min)
+
+// const num=
+// console.log(Math.floor(Math.random()*10))
+
+// const number="100"
+// console.log(parseInt(number))
+
+// const num="45px"
+// console.log(parseInt(num))
+
+// const num="452.445"
+// console.log(parseFloat(num))
+
+// const num="45542.38484"
+// console.log(parseInt(num)*10+1)
+
+ /* Sabka Use Ek Table Me-
+| Method        | Use              |
+| ------------- | ---------------- |
+| Math.random() | random number    |
+| Math.floor()  | decimal remove   |
+| parseInt()    | string to number |
+| toFixed()     | decimal fix      | */
+
+// let random = Math.floor(Math.random()*100)
+// console.log(random)
+
+// let random=Math.floor(Math.random()*10)
+// console.log(random)
+
+
