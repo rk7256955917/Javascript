@@ -1166,6 +1166,86 @@ Temporal Dead Zone wo time hota hai jab variable hoist ho chuka hota hai lekin d
 // person.name="rohiot"
 // console.log(person.name)
 
+// JavaScript Data Types ka matlab hota hai variable me kis type ka data store ho raha hai.-
+
+// JavaScript me 2 Types ke Data Types hote hain:-
+// Primitive Data Types
+// Non-Primitive Data Types
+
+// 1. Primitive Data Types (Most Important ⭐)-
+// String
+// Number
+// Boolean
+// Undefined
+// Null
+// BigInt
+// Symbol
+
+// 1. String-
+// String = Text / Words
+
+// let name = "Rohit"
+// console.log(typeof name)
+
+// 2. Number-
+
+// Number = Integer + Decimal-
+// let age = 25
+// console.log(typeof age)
+
+// 3. Boolean
+// Boolean = true / false
+
+// let isLogin = true
+// console.log(typeof isLogin)
+
+// 4. Undefined-
+// Value assign nahi kiya
+
+// let x
+// console.log(typeof x)
+
+// 5. Null-
+// Intentional empty value
+
+// let y = null
+// console.log(y)
+
+// 6. BigInt-
+// Badi number ke liye use hota hai
+
+// let big = 12345678901234567890n
+// console.log(typeof big)
+
+// 7. Symbol-
+// Unique value create karta hai
+
+// let id = Symbol("id")
+// console.log(typeof id)
+
+// 2. Non-Primitive Data Types-
+// object
+
+// let person = {
+// name: "Rohit",
+// age: 25
+// }
+// console.log(typeof person)
+
+/*
+Important Interview Table-
+| Data Type | Example    |
+| --------- | ---------- |
+| String    | "Rohit"    |
+| Number    | 25         |
+| Boolean   | true       |
+| Undefined | let x      |
+| Null      | null       |
+| Object    | {}         |
+| Array     | []         |
+| Function  | function() |*/
+
+
 // javascript operator-
 /*
 JavaScript Operators ka use values aur variables par operations perform karne ke liye hota hai.
@@ -2303,6 +2383,18 @@ Simple words me:-
 | Math.floor()  | decimal remove   |
 | parseInt()    | string to number |
 | toFixed()     | decimal fix      | */
+// toPrecision() number ke total digits ko control karta hai (decimal se pehle + baad dono)
+// Example-
+// let num = 123.456
+// console.log(num.toPrecision(3))
+// Output-
+// 123
+/*
+| Method        | Work                 |
+| ------------- | -------------------- |
+| toFixed() -   | decimal control      |
+| toPrecision()-| total digits control |
+*/
 
 // let random = Math.floor(Math.random()*100)
 // console.log(random)
@@ -2310,4 +2402,561 @@ Simple words me:-
 // let random=Math.floor(Math.random()*10)
 // console.log(random)
 
+// let num=22.22
+// console.log(num.toFixed())
+
+// let Price=Math.random()*10
+// console.log(Price.toFixed())
+
+// let num = 123.99
+// console.log(Math.floor(num).toString())
+
+//  function Keyword
+// function Kya Hota Hai-
+//  Function code ka block hota hai jo reuse kiya ja sakta hai
+// Matlab ek baar likho, multiple baar use karo.
+
+// Syntax-
+// function functionName(){
+// code
+// }
+// example-
+// function greet(){
+//     console.log("rohit")
+// }
+// greet();
+
+// function add(a,b){
+//     return a+b;
+// }
+// sum =add(5,8);
+// console.log(sum)
+
+
+// function greet(){
+//     console.log("rakesh","rohit")
+// }
+// greet();
+ 
+// function add(a,b){
+//     return a+b;
+// }
+// sum=add(5,9);
+// console.log(sum)
+
+/*calling function-
+Calling Function ka matlab hota hai function ko run / execute karna
+
+Simple Definition-
+Function ko banana = Function Declaration
+Function ko chalana = Function Calling */
+
+// function greet(){
+//     console.log("hello")
+// }// function run kiya 
+// greet()// Aur yaha pe function call kiya 
+
+/*
+📘 JavaScript Foundation Master Question List (Topic-wise)
+
+Covers:
+
+Variables
+
+Data Types
+
+typeof
+
+Operators
+
+Conditions
+
+Ternary
+
+Loops
+
+Total: 50 Structured Questions
+
+🟢 PART 1 – Variables (Q1–Q5)
+Q1
+
+Declare a variable name and assign your name. Print it.
+
+Q2
+
+Declare a variable age using let and assign value 25.
+
+Q3
+
+Declare a constant country and assign value "India".
+
+Q4
+
+Change value of let variable and print before and after.
+
+Q5
+
+Try changing const variable value. What happens?
+
+🟢 PART 2 – Data Types (Q6–Q10)
+Q6
+
+Create variables with data types:
+
+string
+
+number
+
+boolean
+
+undefined
+
+null
+
+Q7
+
+Print typeof of string variable.
+
+Q8
+
+Print typeof of number variable.
+
+Q9
+
+Print typeof of boolean variable.
+
+Q10
+
+Print typeof of null and explain output.
+
+🟢 PART 3 – typeof Operator Practice (Q11–Q15)
+Q11
+typeof "Hello"
+
+Q12
+typeof 100
+
+Q13
+typeof true
+
+Q14
+typeof undefined
+
+Q15
+typeof null
+
+🟢 PART 4 – Operators (Q16–Q25)
+Q16
+console.log(10 + 5)
+
+Q17
+console.log(10 - 5)
+
+Q18
+console.log(10 * 5)
+
+Q19
+console.log(10 / 2)
+
+Q20
+console.log(10 % 3)
+
+Q21
+console.log(5 == "5")
+
+Q22
+console.log(5 === "5")
+
+Q23
+console.log(10 > 5)
+
+Q24
+console.log(10 < 5)
+
+Q25
+console.log(true && false)
+
+🟢 PART 5 – Conditions (Q26–Q35)
+Q26
+
+Check if number is even or odd.
+
+Q27
+
+Check if person is adult or minor.
+
+Q28
+
+Check if number is positive or negative.
+
+Q29
+
+Find largest of two numbers.
+
+Q30
+
+Find largest of three numbers.
+
+Q31
+
+Check if number is zero.
+
+Q32
+
+Create grade system:
+
+90+ A
+
+80+ B
+
+70+ C
+
+else Fail
+
+Q33
+
+Check if number divisible by 5.
+
+Q34
+
+Check if number divisible by 3 and 5.
+
+Q35
+
+Check if year is leap year (basic logic).
+
+🟢 PART 6 – Ternary Operator (Q36–Q40)
+Q36
+
+Check adult/minor using ternary.
+
+Q37
+
+Check even/odd using ternary.
+
+Q38
+
+Check pass/fail using ternary.
+
+Q39
+
+Find greater of two numbers using ternary.
+
+Q40
+
+Check positive/negative using ternary.
+
+🟢 PART 7 – Loops (Q41–Q50)
+Q41
+
+Print numbers from 1 to 10.
+
+Q42
+
+Print numbers from 10 to 1.
+
+Q43
+
+Print even numbers from 1 to 20.
+
+Q44
+
+Print odd numbers from 1 to 20.
+
+Q45
+
+Print multiplication table of 5.
+
+Q46
+
+Print sum of numbers 1 to 10.
+
+Q47
+
+Print numbers using while loop.
+
+Q48
+
+Print pattern:
+
+*
+**
+***
+****
+*****
+
+Q49
+Count numbers divisible by 5 between 1–100.
+
+Q50
+Print reverse numbers from 50 to 1.*/
+// Q1-
+// var name="Rohit"
+// console.log(name)
+
+// let age=25
+// console.log(age)
+
+// const country="india"
+// console.log(country)
+
+//Q4
+// let score=30
+// console.log("befor:",score)
+// score=40
+// console.log("after:",score)
+
+//Q5
+// const pi=3.14
+// pi=30
+// console.log(pi) // assignment to const variable
+
+// Data Types Part-2
+// Q6
+// let num="rohit"
+// console.log(typeof(num))
+
+// Q7
+// let num=1233
+// console.log(typeof(num))
+
+// Q8
+// let price=true
+// console.log(typeof price)
+
+//9
+// let x
+// console.log(typeof x)
+
+// let X=null
+// console.log(X)
+
+// Q7
+// Print typeof of string variable.
+// let age="rohit"
+// console.log(typeof age)
+
+
+// Q8
+// Print typeof of number variable.
+// let age= 45
+// console.log(typeof age)
+
+// Q9
+// Print typeof of boolean variable.
+// let logIn=true
+// console.log(typeof logIn)
+
+// Q10
+// Print typeof of null and explain output.
+//  let num= null 
+//  console.log(num)
+// Explanation-
+// num = null → value null hai
+// console.log(num) → null print karega
+// typeof num → type check karega
+// JavaScript me typeof null = object
+
+// Q11
+// typeof "Hello"
+// console.log(typeof"Hello")
+
+// Q12
+// typeof 100
+// console.log(typeof 100)
+
+// Q13
+// typeof true
+// console.log(typeof true)
+
+// Q14
+// typeof undefined
+// console.log(typeof undefined)
+
+// Q15
+// typeof null
+// console.log(typeof null)
+
+//  PART 4 – Operators (Q16–Q25)
+// Q16
+// console.log(10 + 5)// 15
+
+// Q17
+// console.log(10 - 5)//5
+
+// Q18
+// console.log(10 * 5)//50
+
+// Q19
+// console.log(10 / 2) //5
+
+// Q20
+// console.log(10 % 3) //1
+
+// Q21
+// console.log(5 == "5")  // true
+
+// Q22
+// console.log(5 === "5")  // false
+
+// Q23
+// console.log(10 > 5) // true
+
+// Q24
+// console.log(10 < 5) // true
+
+// Q25
+// console.log(true && false) //false
+
+// 🟢 PART 5 – Conditions (Q26–Q35)
+// Q26
+
+// Check if number is even or odd.
+// for(let i=1;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i+"even")
+//     }
+//     else{
+//         console.log(i+"odd")
+
+//     }
+// }
+// Q27
+//  Check if person is adult or minor.
+// let age=18
+// if(age>=18){
+//     console.log("adult")
+// }
+// else{
+//     console.log("minor")
+// }
+
+// Q28
+// Check if number is positive or negative.
+// let number=12
+// if(number>0){
+//     console.log("positive ")
+// }else if(number<0){
+//     console.log("negative")
+// }
+// else{
+//     console.log("zero")
+// }
+
+// Q29
+// Find largest of two numbers.
+// const a=12
+// const b=8
+// if(a>b){
+//     console.log("a is largest")
+// }else{
+//     console.log("b is largest")
+// }
+
+
+// Q30
+
+// Find largest of three numbers.
+// const a=123
+// const b=124
+// const c=200
+// if(a>b && b<c){
+//     console.log("a is large")
+// }else if(b>a && a<c){
+//     console.log("b is lagest")
+// }
+//   else{
+//     console.log("zero")
+//   }
+
+
+// Q31
+// Check if number is zero.
+// let age=0
+// if(age==0){
+//     console.log("zero")
+// }
+// else{
+//     console.log("not zero")
+// }
+// Q32
+// Create grade system:
+
+// 90+ A
+
+// 80+ B
+
+// 70+ C
+
+// else Fail
+
+// let marks=90
+// if(marks>=90){
+//     console.log("A")
+// }
+// else if(marks>=80){
+//     console.log("B")
+// }
+// else if(marks>=70){
+//     console.log("c")
+// }
+// else{
+//     console.log("fail")
+// }
+
+// Q33
+
+// Check if number divisible by 5.
+// let number=10
+// if(number%5==0){
+//     console.log("divisible by 5")
+// }
+// else{
+//     console.log("not divisible by 5");
+    
+// }
+
+// Q34
+// Check if number divisible by 3 and 5.
+//  let num=60
+//  if(num%3==0 && num%5==0){
+//     console.log("divisible by 3 and 5")
+//  } 
+//  else{
+//     console.log(" Not divisible by 3 and 5")
+//  }
+
+// Q35
+// Check if year is leap year (basic logic).
+
+
+// 🟢 PART 6 – Ternary Operator (Q36–Q40)
+// Q36
+
+// Check adult/minor using ternary.
+
+// Q37
+
+// Check even/odd using ternary.
+
+// Q38
+
+// Check pass/fail using ternary.
+
+// Q39
+
+// Find greater of two numbers using ternary.
+
+// Q40
+
+// Check positive/negative using ternary.
+
+// 🟢 PART 7 – Loops (Q41–Q50)
+// Q41
+
+// Print numbers from 1 to 10.
+
+// Q42
+
+// Print numbers from 10 to 1.
 
