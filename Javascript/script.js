@@ -4441,3 +4441,32 @@ Confident tone me bolo
 //     }
 // })
 
+/*🔹 find() kya hota hai?-
+👉 find() ek array method hai
+👉 jo condition ke basis par pehla matching element return karta hai
+
+🎯 Simple line-
+find = jo pehla item condition satisfy kare usko return karo */
+
+// let arr=[1,3,4,5,10,12,20]
+// let sum=arr.find(arr=>arr>12)
+//     console.log(sum)
+
+// let user=[
+//     {name:"raj",age:20},
+//     {name:"rohit",age:22},
+//     {name:"raju",age:25}
+// ]
+// let result=user.find(user=>user.age>=21)
+// console.log(result)
+
+// includes method- includes method ka uesd  isiliye krte hai ye array me value hai ya nhi ager hoga to output me true show hoga ager oo value nhi hoga to output me false show hoga.
+
+// let arr=[1,2,3,44,4,"java"]
+//     console.log(arr.includes(2))
+//     console.log(arr.includes(5))
+//     console.log(arr.includes(6))
+
+// let user=["javascript",24,4556,34]
+// console.log(user.includes(24))
+// console.log(user.includes(332))
