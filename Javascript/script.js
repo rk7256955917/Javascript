@@ -144,6 +144,14 @@
 // console.log(x!=y)
 // console.log(x>=y)
 // console.log(x<=y)
+/*let x="volvo";
+let y=45;
+let z="Honda";
+console.log(10+x+y+z) //10volvo45honda
+console.log(10+y+x+z+10+13+12)//55volvohonda1312
+console.log(10+10+y+x+z+12) //65volvohonda12
+console.log(10+10+x+y+z) //20volvo45honda
+console.log(10+1+y+x+z+12) //56volvohonda12 */
 // let a=10;
 // let b="10";
 // console.log(a==b);
@@ -387,16 +395,86 @@
    // code
 // }
 
- // for(let i=1; i<=5; i++){
+//  for(let i=1; i<5; i++){
 //     console.log(i)
 // }
+// for(let i = 1; i<=7; i++){
+//     console.log(i);
+//     i++;
+// }
+// for(let i = 0; i<5; i++){
+//     console.log(i);
+//     i = i + 1;
+// }
+// for(let i = 1; i <= 5; ){
+//     console.log(i);
+// }
 
+// for(let i = 1; i <= 3; i++){
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 1000);
+// }
 // for(let i=1; i<=10; i++){
 //     console.log(i)
 // }
 // for(let i=1; i<=15;i++){
 //     console.log(i)
 // }
+// for(let i = 1; i <= 5; i++){
+//     console.log(i);
+//     i++;
+// }
+// let arr = [10, 20, 30, 40];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+// for(let i=1;i<=10;i++){
+//     console.log(i)
+// }
+// for(let i=10;i>=1;i--){
+//     console.log(i)
+// }
+// for(let i=1;i<=20;i++){
+//     if(i%2===0){
+//         console.log(i)
+//     }
+// }
+// for(let i=1;i<=20;i++){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+// }
+// let sum=0
+// for(let i=1;i<=10;i++){
+//     sum+=i 
+// }
+// console.log(sum)
+
+// let num=5
+// for(let i=1;i<=10;i++){
+//     console.log(i*num)
+// }
+
+// let count=0
+// for(let i=1;i<=50;i++){
+// if(i%5===0){
+//     count++
+//     console.log(i)
+// }
+// }
+// let count=0
+// for(let i=1;i<=100;i++){
+//     if(i%3===0 && i%5===0){
+//         count++
+//         console.log(i)
+//     }
+// }
+
+
+
+
 
 // while loop -Jab tak condition true hai tab tak chalega.
 
@@ -1315,7 +1393,15 @@ output-5,6
 Explanation:
 Pehle value print hoti hai
 Baad me increment hota hai*/
-
+// let num1=21
+// let num2=22
+// console.log(num1++ + num2++)// 43
+// let num=21
+// console.log(num++)
+// console.log(num)
+// let num=21
+// let num1=22
+// console.log(++num+num1++)
 /*Pre Increment Example-
 let a = 5;
 console.log(++a); // 6
@@ -2411,50 +2497,7 @@ Simple words me:-
 // let num = 123.99
 // console.log(Math.floor(num).toString())
 
-//  function Keyword
-// function Kya Hota Hai-
-//  Function code ka block hota hai jo reuse kiya ja sakta hai
-// Matlab ek baar likho, multiple baar use karo.
 
-// Syntax-
-// function functionName(){
-// code
-// }
-// example-
-// function greet(){
-//     console.log("rohit")
-// }
-// greet();
-
-// function add(a,b){
-//     return a+b;
-// }
-// sum =add(5,8);
-// console.log(sum)
-
-
-// function greet(){
-//     console.log("rakesh","rohit")
-// }
-// greet();
- 
-// function add(a,b){
-//     return a+b;
-// }
-// sum=add(5,9);
-// console.log(sum)
-
-/*calling function-
-Calling Function ka matlab hota hai function ko run / execute karna
-
-Simple Definition-
-Function ko banana = Function Declaration
-Function ko chalana = Function Calling */
-
-// function greet(){
-//     console.log("hello")
-// }// function run kiya 
-// greet()// Aur yaha pe function call kiya 
 
 /*
 📘 JavaScript Foundation Master Question List (Topic-wise)
@@ -2928,35 +2971,1473 @@ Print reverse numbers from 50 to 1.*/
 
 // Q35
 // Check if year is leap year (basic logic).
-
+// Simple Language me
+// 4 se divide → leap ho sakta hai
+// 100 se divide → leap nahi
+// 400 se divide → fir se leap
+// let year=2024
+// if((year%4==0 && year%100!==0)||year%400!==0){
+//     console.log("leap year")
+// }else{
+//     console.log("not leap year")
+// }
 
 // 🟢 PART 6 – Ternary Operator (Q36–Q40)
 // Q36
 
 // Check adult/minor using ternary.
-
+//  let age=30
+//  let result=age>=30? "adult":"minor"
+//  console.log(result) 
 // Q37
-
 // Check even/odd using ternary.
+// let num=10
+// console.log(num%2==0 ? "even":"odd") 
 
 // Q38
 
 // Check pass/fail using ternary.
+// let marks=50
+// console.log(marks>=42? "pass":"fail")
 
 // Q39
-
 // Find greater of two numbers using ternary.
+// let a=12
+// let b=11
+// console.log(a>b ? a:b)
 
 // Q40
-
 // Check positive/negative using ternary.
+// let value=23
+// console.log(value>0 ? "positive":"negative")
 
 // 🟢 PART 7 – Loops (Q41–Q50)
 // Q41
-
 // Print numbers from 1 to 10.
-
+// for(let i=1;i<=10; i++){
+//     console.log(i)
+// }
 // Q42
-
 // Print numbers from 10 to 1.
+// for(let i=10;i>=1;--i){
+//     console.log(i)
+// }
+
+// Q43
+// Print even numbers from 1 to 20.
+// for(let i=1;i<=20;i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+// Q44
+// Print odd numbers from 1 to 20.
+// for(let i=1;i<=20;i++){
+//     if(i%2!==0){
+//         console.log(i)
+//     }
+// }
+
+// Q45
+// Print multiplication table of 5.
+// let table=5
+// for(let i=1;i<=10;i++){
+//     console.log(i*table)
+// }
+
+// Q46
+// Print sum of numbers 1 to 10.
+// let sum=0
+// for(let i=1; i<=10;i++){
+//   sum = sum+i
+// }
+// console.log(sum)
+
+// Q47
+// Print numbers using while loop.
+// let i=1
+// while(i<=10){
+//     console.log(i)
+//     i++
+// }
+
+// Q48
+// Print pattern:
+// *
+// **
+// ***
+// ****
+// *****
+// let n =5
+// for(let i=1;i<=n;i++){
+//     let pattern = ""
+    
+//     for(let j=1;j<=i;j++){
+//         pattern += "*"
+//     }
+//     console.log(pattern)
+// }
+
+// Q49
+// Count numbers divisible by 5 between 1–100.
+// let count=0
+// for(let i=1;i<=100;i++){
+//     if(i%5==0){
+//      count++
+//     }
+// }
+// console.log(count)
+
+
+// Q50
+// Print reverse numbers from 50 to 1.
+
+// for(let i=50;i>=1;i--){
+//     console.log(i)
+// }
+
+//  function Keyword
+// function Kya Hota Hai-
+//  Function code ka block hota hai jo reuse kiya ja sakta hai
+// Matlab ek baar likho, multiple baar use karo.
+
+// Syntax-
+// function functionName(){
+// code
+// }
+// example-
+// function greet(){
+//     console.log("rohit")
+// }
+// greet();
+
+// function add(a,b){
+//     return a+b;
+// }
+// sum =add(5,8);
+// console.log(sum)
+
+
+// function greet(){
+//     console.log("rakesh","rohit")
+// }
+// greet();
+ 
+// function add(a,b){
+//     return a+b;
+// }
+// sum=add(5,9);
+// console.log(sum)
+
+/*calling function-
+Calling Function ka matlab hota hai function ko run / execute karna
+
+Simple Definition-
+Function ko banana = Function Declaration
+Function ko chalana = Function Calling */
+
+// function greet(){
+//     console.log("hello")
+// }// function run kiya 
+// greet()// Aur yaha pe function call kiya 
+/*
+| Scope          | Kaha declare      | Kaha use         |
+| -------------- | ----------------- | ---------------- |
+| Global Scope   | Bahar             | Har jagah        |
+| Function Scope | Function ke andar | Sirf function me |
+| Block Scope    | { } block me      | Sirf block me    |*/
+
+/* Function Parameters-
+
+Function Parameters ka use function ke andar value receive karne ke liye hota hai.
+Ye function ke parentheses ( ) ke andar likhe jaate hain.
+
+Simple words me:-
+👉 Parameter = Variable jo function value lene ke liye use karta hai*/
+
+// function  add(a,b){
+//     return a+b
+// }
+//  sum=add(3,4)
+// console.log(sum)
+
+// function greet(a,b){
+//     return a*b
+// }
+// mul=greet(3,4)
+// console.log(mul)
+
+// function add(a,b,c,d){
+//     return a+b+c+d
+// }
+// add(2,3,3,3)
+
+// function add(a,b){
+//    return a+b
+   
+// }
+// add(2,3)
+// let result=add(3,3)
+// console.log(result)
+
+// function volvo(a,b,c){
+//     return a+b+c
+// }
+// volvo(2,2,8)
+// console.log(volvo(2,2,8))
+
+// function test(){
+//     let name="Rohit"
+//     console.log(name)
+// }
+// test()
+/*
+Local Variable Kya Hota Hai ?-
+👉 Jo variable function ke andar declare hota hai
+👉 Wo sirf function ke andar hi use hota hai
+👉 Function ke bahar use nahi hota */
+/*
+| Local Variable    | Global Variable   |
+| ----------------- | ----------------- |
+| Function ke andar | Function ke bahar |
+| Limited scope     | Everywhere use    |
+| Safe              | Risky             |*/
+
+// Example Global variable-
+// let name = "Rohit"
+// function test(){
+// console.log(name)
+// }
+// test()
+
+// let num=100
+// function test(){
+//     console.log(num)
+// }
+// test()
+
+// Example Local variable-
+
+// function car(){
+//     let num=100
+//     console.log(num)
+// }
+// car()
+
+// function one(){
+//     let num=12
+//     console.log(num)
+// }
+// one()
+// {
+//     function car1(){
+//         let num2=123
+//         console.log(num2)
+//     }
+// }
+// car1()
+// { function name(){
+//     let name="Rohit"
+//     console.log(name)
+// }
+// }
+// name()
+
+// function sayHello() {
+//   return "Hello World";
+  
+// }
+// sayHello();
+// console.log(sayHello())
+
+/*Invoking JavaScript Functions ka matlab hota hai function ko call karna / chalana.
+
+Simple words me:-
+👉 Function banana alag hota hai
+👉 Function chalana (invoke karna) alag hota hai 
+ Example-
+ function greet(){
+console.log("Hello Rohit")
+}
+greet() // 👉 greet() likhne ko Invoking Function bolte hain.
+*/
+
+/* Maine ek button banaya tha jisme us button ko click krne pe hello aaye yahi uska javascript code hai aur iska id ko html me hai buton ke sath used kr rakha hai.
+function car(){
+   return "hello"
+}
+function showData(){
+    document.getElementById("demo").innerHTML= car()
+} */
+//  function greet(){
+//     return "hello"
+//  }
+//  let a=greet()
+//  let b=greet()
+//  console.log(a)
+//  console.log(b)
+
+// function greet(name){
+//     return "hello"+name
+// }
+// greet()
+// let a=greet("rohit")
+// let b=greet("Raj")
+// console.log(a)
+// console.log(b)
+/*
+Calling Function
+→ Function ko execute karna
+
+Referencing Function
+→ Function ka address dena bina execute kiye */
+
+/* function add(a,b){
+return a+b
+}
+console.log(add)  
+console.log(add(2,3))
+o/p- 5
+👉 add → referencing
+👉 add(2,3) → calling */
+
+/*
+function add(a,b){
+    return a+b
+}
+add(5)
+console.log(add(5))  iska output jo hoga undefined hoga kyun isliye a=5 hai b=undefined hai dono ko ek sath krne pe 5+undefined to value hogi undefined .
+a=5
+b=undefined
+5+undefined= NaN hoga */
+
+// function greet(a,b=10){
+//     return a+b
+// }
+// greet(5,10)
+// console.log(greet(5,10))
+
+// function add(a,b=10){
+//     return{a,b}
+// }
+// add(5)
+// console.log(add(5))
+
+// function greet(a,b=4){
+//     return [a,b]
+// }
+// greet(19)
+// console.log(greet(19))
+
+/* function greet(a,b=2){
+    return a,b
+}
+greet(2,10)
+console.log(greet(2,10))
+
+Final Rule
+Default value tab use hoti hai jab argument na ho
+Argument mil gaya → default ignore
+return a,b → last value return */
+
+//  function myFunction(x,y=10){
+//     return x+y
+//  }
+//  myFunction(5,12)
+//  console.log(myFunction(5,12))
+
+/* Function Argument Kya Hota Hai-
+ 👉 Function call karte time jo actual value pass karte hain usko Argument bolte hain.
+
+ 
+function add(a,b){
+    return a+b
+}
+add(2,3)
+console.log(add(2,3)) */
+
+// function add(){
+//     console.log([0])
+//     console.log([1])
+//     console.log([1])
+// }
+// add(10,20,30)
+
+// function add(a,b){
+//     return a+b  
+// }
+// add(10,12)
+// console.log(add(10,12))
+// jab hme kitni bhi Argument pass krni ho aur parameters define nhi ho to use Hm argument object bolte hai
+
+// function add(){
+// let sum = 0
+// for(let i=0;i<arguments.length;i++){
+// sum += arguments[i]
+// }
+// console.log(sum)
+// }
+// add(2,3,4,5)
+
+// function add(){
+//     let sum=0
+//     for(let i=0;i<arguments.length;i++){
+//         sum+=arguments[i]
+//     }
+//     console.log(sum)
+// }
+// add(1,2,3,4)
+
+// function greet(){
+//     let result=0
+//     for(let i=0;i<arguments.length;i++){
+//         result+=arguments[i]
+//     }
+//     console.log(result)
+// }
+// greet(1,2,3,2,5)
+
+// let x = 5;
+// let y = 6;
+// function multiply(a, b) {
+//   return a * b;
+// }
+// multiply(x, y);
+// console.log(multiply(x,y))
+
+// let x=4
+// let y=7
+// function add(a,b){
+//     return a*b
+// }
+// add(x,y)
+// console.log(add(4,7))
+
+// function add(a,b){
+//     return a*b
+// }
+// add(4)
+// console.log(add(4))
+
+// function greet(a,b){
+//     return a*b
+// }
+// greet(5)
+// console.log(greet(5))
+
+// Rest parameter-
+// Jab function me multiple arguments ho aur unko ek variable me collect karna ho to Rest Operator use karte hain.
+
+// function add(...numbers){
+// console.log(numbers)
+// }
+// add(1,2,2,3,3,3,)
+
+// function greet(...car){
+//     console.log(car)
+// }
+// greet(1,4,5,5,6,8)
+// greet(2,3,3,4,5,5,5)
+// greet(5,5,5,66,6,66,3)
+
+// function greet(...numbers){
+//     console.log(numbers)
+//     console.log(numbers.length)
+// }
+// greet(1,3,4,5,5)
+
+// function add(...numbers){
+//     console.log(numbers)
+//     console.log(numbers.length)
+    
+// }
+// add(12,12,134,133)
+
+// x= sumAll(1,2,3,3,3,4,5,5)
+
+// function sumAll(){
+//     let sum=0
+//     for(let i=0;i<arguments.length;i++){
+//         sum+=arguments[i]
+//     }
+//   console.log(sum)
+// }
+
+// function add(...numbers){
+//     console.log(numbers)
+// }
+// add(12,12,3,4,44,44,3)
+
+// y=sumAll(12,12,13,123,223)
+
+// function sumAll(){
+//     let sum=0  
+//         for(let i=0;i<arguments.length;i++){
+//         sum+=arguments[i]
+//         }
+//         console.log(sum)
+// }
+
+// let sum=0
+// function add(){
+//     for(let i=0;i<arguments.length;i++){
+//         sum+=arguments[i]
+//     }
+//     console.log(sum)
+// }
+// x=add(12,22,33,33,44,)
+
+// let sum=0
+// function sumAll(){
+//     for(let i=0;i<arguments.length;i++){
+//         sum+=arguments[i]
+//     }
+//     console.log(sum)
+// }
+//  sumAll(12,22,33,33,3)
+
+// let age=0
+// function sumAll(){
+//     for(let i=0;i<arguments.length;i++){
+//         age+=arguments[i]
+//     }
+//     console.log(age)
+// }
+// sumAll(2,2,2,2)
+
+// function add(...numbers){
+//     console.log(numbers)
+//     console.log(numbers.length)
+// }
+// add(12,12,12,123,12)
+
+//  Function Expression-
+//  Function ko variable me store karna = Function Expression.
+
+ /*Important Rule-
+Function expression me variable name se call hota hai, function name se nahi
+
+let age = function test()
+✔ call → age()
+❌ call → test() (ye bahar access nahi hota)*/
+
+// let age =function test(a,b){
+//     return a+b
+// }
+// age(2,3)
+// console.log(age(2,3))
+
+// let num= function add(a,b,c){
+//     return a*b+c
+// }
+// num(2,4,5)
+// console.log(num(2,4,5))
+
+// function fn(){
+//     return fn
+// }
+// const test= function hello(){
+//     return "hi"
+// }
+// console.log(test())
+
+/* Hoisting ka matlab:
+ JavaScript code run hone se pehle variables aur functions ko memory me decleare kar deta hai.
+
+.let aur const hoist hote hain, lekin initialization se pahle TDZ me rehte hain.
+Isliye TDZ ke dauran variable access karne par ReferenceError aata hai.
+
+Temporal Dead Zone =
+ Variable create ho gaya but initialize nahi hua, aur us time access karne par ReferenceError aata hai
+
+ console.log(age)
+ var age=10;
+
+ console.log(x)
+ let x=21; */
+
+//  console.log(x)
+//  const a=20
+
+/*Lexical Scope Kya Hota Hai ?
+
+Lexical Scope = Function jaha define hota hai, wahi se variable ko access karta hai
+
+👉 Matlab
+JavaScript call hone ki jagah nahi
+define hone ki jagah dekhta hai
+
+example-
+var a = 10
+function test(){
+console.log(a)
+}
+test()
+
+Kyuki:
+test() global me define hai
+Global me a = 10 hai
+isliye 10 print hua */
+
+// var a=10
+// function test(){
+//     console.log(a)
+// }
+// test()
+
+// var a=10
+// function test(){
+//     console.log(a)
+// }
+// function test2(){
+//     console.log(a)
+//     var a=12
+// }
+// test2()
+
+/* 1. Arrow Functions (=>)-
+ Arrow Function = Function likhne ka short (modern) way.
+ syntax-
+ const functionName = (parameters) => {
+   code
+ } */
+// function sayHello(){
+//     console.log("hello rohit")
+// }
+
+/* arrow function already ek function expression hai but islie jab hm function keyword used kr rahe hai to jab run kr rahe hai to unexcceted toekn aa raha hai jb isko isko normal function me likhange bina arrow function used kiye to ye run karega but arrow function ke sath function keyword ke sath work nhi karga iske let,const keyword used karenge to ye run kr lega.
+ function num=(a,b)=>a+b {
+     console.log(num(2,3))
+ }*/
+
+
+/*Yaha main jo a+b ke baad me curly Brces jo diya hu to ye unaccepted error aayega kyunki curly Braces de dene ke badd me hmko return bhi krana padta hai. kyunki ye block ke aander me jata hai isliye return krna padta hai aab next ager hmko direct run krana hai to curly Braces dene ki jarurat nhi hai thik hai assani se code run ho jaega.
+ const add=(a,b)=>a+b {
+     console.log(add(2,3))
+ } */
+
+//  let add=(a,b)=>a*b
+//  console.log(add(2,4))
+
+// const greet=(a,b,c)=>a*b+c
+// console.log(greet(2,3,4))
+
+// this- this ka uesd mostly tb krte hai job koi same function multiple object pe used krna ho to this ka used krte hai aur work krta hai jb koi varible ya koi function ho jab tk usko call nhi kraye tb tk this work nhi karega matlab ki this work hota function ko call krne  pe functon call hone baad jo dot ke left hota hai wahi this ka work krta hai. 
+
+// const obj={
+//     name:"rohit",
+//     show(){
+//         console.log(this.name)
+//     }
+// }
+// obj.show()
+
+// const car={brand:"bmw"}
+// const car1={brand:"volvo"}
+// function show(){
+//         console.log(this.brand)
+//     }
+// show.call(car)
+// show.call(car1)
+
+// let age={
+//     name:"Rohit",
+//     age:23,
+//     show(){
+//     console.log(this.name,this.age)
+// }
+// }
+// age.show()
+
+// let person=()=>({
+//     name:"Rohit",
+//     age:30
+// })
+// console.log(person())
+
+// const age=(a,b)=>a+b
+// console.log(age(2,3))
+  
+
+// const person=(a,b,c)=>a*b+c
+// console.log(person(2,3,2))
+
+/*
+| Function Type    | this           |
+| ---------------- | -------------- |
+| Regular Function | calling object |
+| Arrow Function   | outer scope    |
+
+👉 Regular function me this change hota hai
+👉 Arrow function me this change nahi hota */
+
+/* Callback Function =
+Ek function ko dusre function ke andar argument ki tarah pass karna aur baad me usko call karna.
+Simple words me:
+👉 Function ke andar function call karna (baad me) = Callback Function */
+// ex-
+//  function greet(name) {
+//    console.log("hello"+name)
+// }
+// function user(callback){
+//     let name ="Rohit"
+//     callback(name)
+// }
+// user(greet)
+// function add(name,age){
+//     console.log("hello"+name+age)
+// }
+// function user(callback){
+//     let name="Rohit"
+//     let age=23
+//     callback(name,age)
+// }
+// user(add)
+
+// function greet(name,age,price){
+//     console.log("hello"+name+age+price)
+// }
+// function user(callback){
+//     let name="Raj"
+//     let age=21
+//     let price=234
+//     callback(name,age,price)
+// }
+// user(greet)
+
+// function greet(name,age,price){
+//     console.log(["hello",name,age,price])
+// }
+// function user(callback){
+//     let name="rohit"
+//     let age=22
+//     let price=2323
+//     callback(name,age,price)
+// }
+// user(greet)
+ 
+// Pure function-  esa function jo bahar ki value na badale  usko hm bolenge pure function.
+// impure function- Esa function jo bahar ki value badal de to usko bolenge impure function.
+// function abcd(){
+//     return "hi";
+// }
+// function user(a){
+//     return a + 1;
+// }
+// let a = 12;
+// console.log(abcd());   // hi
+// console.log(user(a));  // 13
+
+// closures- Ek function jo return kare ek function aur return hone wala function hamesha used karega ek parent hone wala variable.
+// function user(){
+//     let a=12
+//     return function(){
+//         console.log(a)
+//     }
+// }
+// let a= user()
+// a()
+// function greet(){
+//     let a=132
+//     return function (){
+//         console.log(a)
+//     }
+// }
+// let a=greet()
+// a()
+// function car(){
+//     let num=["Rohit",12,13,16]
+//     return function(){
+//         console.log(num)
+//     }
+// }
+// let num=car()
+// num()
+
+/* 👉 Inner function outer ke variables use kar sakta hai = lexical scope
+function abcd(){
+    let a=10
+    function defg(){
+        let b=12
+    function ghij(){
+        let c=15
+        console.log(a,b,c)
+    }
+    ghij()
+    }
+    defg()
+}
+abcd() */
+
+
+// function user(){
+//     let a=9
+//     function greet(){
+//         let b=6
+//         function number(){
+//             let c=8
+//             console.log(a,b,c)
+//         }
+//         number()
+//     }
+//     greet()
+// }
+// user()
+
+
+// function car(){
+//     let num=20
+//     return function(){
+//       console.log(num)
+//     }
+// }
+// let num=car()
+// num()
+
+
+
+
+
+
+/* Object- Multiple value ko ek variable and function me store krna.
+Aur value stored hm krte hai key:value pair me aur function ko key:function() pair method me .
+example-
+const car={
+type:"Fiat",
+modal:"500",
+color:"white"
+}
+-isme type,modaland color property and Fiat,modal and color property value hai.
+
+| Feature         | Example        |
+| --------------- | -------------- |
+| Object create   | `{}`           |
+| Key value       | `name:"Rohit"` |
+| Access value    | `person.name`  |
+| Function inside | `greet()`      |*/
+
+// let person={
+//     name:"rohit",
+//     age:22,
+// }
+// console.log(person)
+
+// let car={
+//     type:"bmw",
+//     modal:"223",
+//     price:"4000"
+// }
+// console.log(car.modal)
+
+// const name={}
+// name.name="rohit"
+// name.age=21
+// console.log(name)
+
+// const person={}
+// person.name="rohit"
+// person.age=21
+// console.log(person)
+
+// const person=new object({
+//    name:"rohit",
+//    age:23
+//  })
+//  console.log(person.name)
+
+// function abcd(val){
+//     val();
+// }
+// abcd(function(){
+//     console.log("hi")
+// });
+
+// function abcd(val){
+//     val();
+// }
+// abcd(function(){
+
+// })
+
+// function greet(){
+// let firstName="Rohit"
+// let age=23
+// let lastName="Kumar"
+//    return firstName+""+lastName+age
+// }
+// console.log(greet())
+
+// this= this ka used hm current object ki property acess krne ke liye krte hai
+// const person={
+//     firstName:"Rohit",
+//     age:23,
+//     lastName:"kumar",
+//      full:function(){
+//         return this.firstName+""+this.lastName
+//     }
+// }
+// console.log(person.full())
+
+
+// const greet={
+//     name:"rohti",
+//     age:21,
+//     last:"kumar", 
+//     full:function(){
+//         return this.name+""+this.last+age
+//     }
+// }
+// console.log(greet.full())
+
+// const person={
+//     name:"ronhti",
+//     age:23
+// }
+// console.log(person.name)
+
+// const person={
+//     name:"rohit",
+//     age:23
+// }
+// console.log(person.name+""+person.age)\
+// const person={
+//     name:"rohit",
+//     age:23
+// }
+// console.log(person.age)
+
+// Object me in ka used kyun krte hai-
+// Object me in used isliye krte hai ki object ki property check krne ke liye krte hai.
+//“in operator ka use object me property (key) exist karti hai ya nahi, ye check karne ke liye hota hai.”
+// const person={
+//     name:"raj",
+//     city:"",
+//     age:23
+// }
+// console.log("name" in person);
+// console.log("city" in person);
+// console.log("age" in person);
+
+// const greet={
+//     name:"raj",
+//     age:23,
+//     city:"delhi",
+    
+// }
+// console.log("name" in greet)
+// console.log("age" in greet)
+// console.log("city" in greet)
+// console.log("price" in greet)
+
+/* Object methods - object ke ander jo function hota hai usko method bolte hai.
+🔥 Interview Line-
+👉 “Object methods are functions stored inside objects used to perform operations on object data.”
+
+| Property   | Method               |
+| ---------- | -------------------- |
+| Data store | Function store       |
+| name, age  | greet(), showMarks() |*/
+
+// const person={
+//     name:"raj",
+//     age:23,
+//     greet:function(){
+//         return "ho"+this.name;
+//     }
+// }
+// console.log(person.greet())
+
+/* this ka matlab hota hai "current object".
+this-> jis object ke ander method chal raha hai this us object ko refer krta hai.
+
+const person={
+    firstName:"raj",
+    age:21,
+    lastName:"kumar",
+    fullName:function(){
+        return this.firstName+""+this.lastName
+    }
+}
+console.log(person.fullName()) */
+
+// const greet={
+//     name:"rohan",
+//     age:22,
+//     last:"kumar",
+//     fullName:function(){
+//         return this.name+""+this.last+""+this.age
+//     }
+// }
+// console.log(greet.fullName())
+
+/* javascript Display object-
+
+👉 Object display = object ke data ko screen pe dikhana
+
+🔥 Interview Line-
+👉 “Displaying an object means showing its properties and values using methods like console.log, alert, or JSON.stringify.”
+
+Some solutions to display JavaScript objects are:-
+
+Displaying the Object Properties by name
+Displaying the Object Properties in a Loop
+Displaying the Object using Object.values()
+Displaying the Object using JSON.stringify() */
+
+// javascript constructor-
+
+// function person(name,age,price,color){
+//     this.name=name;
+//     this.age=age;
+//     this.price=price;
+//     this.color=color;
+// }
+// const myfather= new person("rohit",23,569,"blue")
+// console.log(myfather)
+
+// function greet(name,age,price,color){
+//     this.name=name,
+//     this.age=age,
+//     this.price=price,
+//     this.color=color
+// }
+// const mynum= new greet("rohit",23,500,"black")
+// console.log(mynum)
+// 🔥 Interview Line-
+// 👉 “Built-in constructors are predefined functions in JavaScript used to create standard objects like Array, Object, Date, etc.”
+// console.log(carName)
+//  let carName = "Volvo";
+// const carName;
+/* strict javascript-
+🔥 Kyun Use Karte Hain (Real Reason)
+✔️ Bugs jaldi pakadne ke liye
+✔️ Safe code likhne ke liye
+✔️ Interview + real project standard
+
+🔹 Ek Line Me Final-
+👉 Strict mode = safe, clean aur bug-free JavaScript
+
+🔥 Interview Power Line-
+👉 “Strict mode prevents silent errors and enforces better coding practices in JavaScript.” */
+
+// let num=["apple","rojfn","sddjnsejn"]
+// num[0]="black"
+// num.push(20)
+// console.log(num)
+// const arr=["apple","banana","papaya"]
+// console.log(arr)
+
+// const arr={firstName:"rohit",age:23,lastName:"Kumar"}
+// console.log(arr)
+
+// const arr=["apple","banana","rohit"]
+// console.log(arr.length-1)
+
+// const arr=["rohit","banana","apple","Raj"]
+// console.log(arr[2])
+
+// const arr=["apple","banana","blue"]
+// console.log(arr.toString())
+
+// const arr=["rohit","kaplir","raj","om"]
+// console.log(arr.shift())// Remove the all array in the first in another remove 
+
+// const arr=["rohit","rahul","nitish","raj"]
+// arr.unshift("lemon")
+// console.log(arr)
+// const arr=["rohit","raj","ragav","raj"]
+// arr.unshift(2)
+// console.log(arr)// unshift se hm suru me jo bhi kuchh add krna chahte hai add kr sakte hai.
+
+// const arr=["rohit","raju","ragav","ramu"]
+// arr.splice(2)
+// console.log(arr)
+
+// const arr=[1,2,3]
+// arr.splice(1,0,99)
+// console.log(arr)
+// map()- map() mathod ek array hai jo hm har element ko tranform kr ek new array bnate hai.
+
+// interview line -
+// Map() is used to tranfrom for each Element of an Array and  return a new Array. 
+
+// let arr=[10,30,40]
+// let result=arr.map(n=>n*2)
+//     console.log(result)
+
+// let arr=[2,3,4]
+// let nums=arr.map(n=>n*2)
+// console.log(nums)
+
+// let person=[2,3,4]
+// let result=person.map(n=>n+10)
+// console.log(result)
+
+// let arr=[1,2,3,45,3]
+// let result=arr.map(n=>n-2)
+// console.log(result)
+
+// let arr=[2,3,3,4,5,"rohti","raj"]
+// let nums=arr.map(n=>n/2)
+// console.log(nums)
+
+// let arr=[4,45,6,5]
+// let results=arr.map(n=>n*2)
+// console.log(results)
+
+// let arr=["rohti","rajkumar"]
+// let results=arr.map(str=>str.length)
+// console.log(results)
+
+// let num=["rohit","rahul","kumar","rama"]
+// let results=num.map(str=>str.length)
+// console.log(results)
+
+// let arr=[1,3,44,44]
+// let results=arr.map(str=>str.toString())
+// console.log(results)
+
+// let users=[
+// {name:"rohit",age:23}]
+// let results=users.map(users=>`${users.name}${users.age}`)
+// console.log(results)
+
+// let arr=[
+//     {name:"Rohit", last:"raj",age:22,price:233},
+//     {name:"raj",last:"raja",age:23,price:2333}
+// ]
+// let results=arr.map(arr=>`${arr.name}${arr.last} ${arr.age} ${arr.price}`)
+// console.log(results)
+
+/*
+💡 Agar interviewer cross-question kare:-
+
+👉 “Why was it called scripting language earlier?”
+Answer:
+“Kyuki pehle JavaScript browser ke andar chhote tasks jaise form validation aur DOM manipulation ke liye use hoti thi.”
+
+💡 Agar pooche:-
+👉 “Why is it programming language now?”
+Answer:-
+“Kyuki ab JavaScript backend (Node.js), APIs, aur full applications banane ke liye use hoti hai.”
+🧠 Pro tip:
+Confident tone me bolo
+“Originally” + “Now” ka use karo
+👉 Interviewer ko lagega tumhe evolution pata hai
+🎯 Final cheat line:
+
+👉 “Originally scripting, now full programming language” */
+
+// let arr=[
+//     {name:"rohit",age:22},
+//     {name:"aman",age:23}
+// ]
+// let result=arr.map(arr=>arr.name)
+// console.log(arr)
+
+// let users=[
+//     {name:"rahul",age:21},
+//     {name:"rohit",age:21}
+// ];
+// let results= users.map(user=>{
+//     return{
+//         name:user.name,
+//         age:user.age,
+//         userName:"raj",
+//         userAge:21, 
+//     }
+//     });
+//     console.log(results)
+
+// let users=[
+//     {name:"ragav",age:21},
+//     {name:"ragav",age:21}
+// ];
+// let results=users.map(user=>{
+//     return{
+//         name:user.name,
+//         age:user.age,
+//         userName:"ramesh",
+//         UserAge:22
+//     }
+// });
+// console.log(results)
+
+// let users=[
+//     {name:"Ramu",age:21},
+    
+// ]
+// let results=users.map(user=>{
+//     return{
+//        name:user.name,
+//        age:user.age,
+//         userName:"Raja",
+//         userAge:22
+//     }
+// })
+// console.log(results)
+
+// let users=[
+//     {name:"rohit",age:21}
+// ]
+// let results=users.map(user=>{
+//     return user.age>=21? "yes":"No"
+// })
+// console.log(results)
+
+// let users=[
+//     {name:"Rohit",age:20}
+// ]
+// let results=users.map(user=>{
+//     return user.age>=18? "Yes":"No"
+// })
+// console.log(results)
+
+// filter()- filter() ek array method hai jo condition ke base pe element ko select krta hai.new array return karta hai sirf wo elements deta hai jo condition pass kare.
+// 🎯 Interview Line-
+// 👉 “filter() is used to return elements that satisfy a given condition.”
+/*
+| map                 | filter                   |
+| ------------------- | ------------------------ |
+| transform karta hai | select karta hai         |
+| size same rehta hai | size change ho sakta hai | */
+
+// let users=[1,2,3,4,12,14,16]
+// let results= users.filter(user=>user>4);
+// console.log(results);
+
+// let users=[12,13,14,15]
+// let results=users.filter(user=>user>12)
+// console.log(results)
+
+// let users=["rohit","rahul","raja"]
+// let results=users.filter(user=>user>"raja")
+// console.log(results)
+
+// let users=[
+//     {name:"rohit",age:21},
+//     {name:"rahul",age:15}
+// ]
+// let adults=users.filter(user=>user.age>=18)
+// console.log(adults)
+
+// let arr=[
+//     {name:"rohit",age:21},
+//     {name:"rahul",age:25}
+// ]
+// let adults=arr.filter(n=>n.age>=22)
+// console.log(adults)
+
+// let users=[
+//     {name:"rohit",age:19}
+// ]
+// let adults=users.filter(user=>user.age>=19)
+//            users.map(user=>user.name)
+//            console.log(adults)/
+
+// let users=[
+//     {name:"rohit",age:21},
+//     {name:"rahul",age:22},
+//     {name:"hemshankar",age:23}
+// ]
+// let results=users.filter(user=> user.age>=18 && user.name.startsWith("r"))
+//             console.log(results)
+
+// let users=[
+//     {name:"Rohit",age:21},
+//     {name:"Ramu",age:22},
+//     {name:"amit",age:21},
+//     {name:"aakash",age:25}
+// ]
+// let results=users.filter(user=>user.age>=20 && user.name.startsWith("a"))
+// console.log(results)
+
+// reduce()
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// console.log(sum)
+
+// const users=[1,2,2,3,34,21]
+// let sum=users.reduce((sum,n)=> sum + n,0)
+// console.log(sum)
+
+// let num=[1,3,34,23,234]
+// let sum= num.reduce((sum,n)=> sum+n,0)
+// console.log(sum)
+
+// const arr=[1,233,-112,22,-100]
+// const sum=arr.reduce((sum,arr)=>sum+arr,0)
+// console.log(sum)
+
+// const users=[10,10,199,100]
+// const sum=users.reduce((sum,n)=>sum+n,10)
+// console.log(sum)
+
+// const arr=[10,10]
+// const sum=arr.reduce((sum,arr)=>sum+arr,20)
+// console.log(sum)
+
+// let cart=[
+//     {price:220,quality:2},
+//     {price:300,quality:3}
+// ]
+// let results=cart.reduce((acc,item)=>{
+//     return acc+item.price*item.quality
+// },0)
+// console.log(results)
+
+// let arr=[
+//     {price:200,quantity:2},
+//     {price:900,quantity:3}
+// ]
+// let sum= arr.reduce((n,item)=>{
+//     return n+item.price*item.quantity
+// },0)
+// console.log(sum)
+
+// let cart=[
+//     {price:1330,quantity:2},
+//     {price:200,quantity:3}
+// ]
+// let sum=cart.reduce((acc,item)=>{
+//     return acc+item.price-item.quantity
+// },0)
+// console.log(sum)
+
+// let cart=[
+//     {price:200,qulity:2},
+//     {price:300,qulity:3}
+// ]
+// let sum= cart.reduce((acc,item)=>{
+//     return acc+item.price/item.qulity
+// },0)
+// console.log(sum)
+
+
+// let cart=[
+//     {price:200,quality:3},
+//     {price:300,quality:4}
+// ]
+// let sum=cart.reduce((acc,item)=>{
+//     return acc+item.price*item.quality
+// },0)
+// console.log(sum)
+
+// let cart=[
+//     {name:"rohit",age:21},
+//     {name:"raj",age:22}
+// ]
+// let result=cart.reduce((acc,user)=>{
+//     if(!acc[user.age]){
+//         acc[user.age]=[];
+//     }
+//     acc[user.age].push(user)
+//     return acc
+// },{})
+// console.log(result)
+
+// let user=[
+//     {name:"AK",age:21},
+//     {name:"Nk",age:32},
+//     {name:"ak",age:23},
+//     {name:"bk",age:21}
+// ]
+// let results=user.reduce((acc,user)=>{
+//     if(!acc[user.age]){
+//         acc[user.age]=[]
+//     }
+//     acc[user.age].push(user)
+//     return acc
+// },{})
+// console.log(results)
+
+// let user=[1,2,3,4,5]
+// let results=user.reduce((acc,user)=>{
+//     if(user%2===0){
+//         acc.even.push(user)
+//     }
+//     else{
+//         acc.odd.push(user)
+//     }
+//     return acc
+// },{even:[],odd:[]})
+// console.log(results)
+
+// let num=[10,11,13,20,21]
+// let results=num.reduce((acc,num)=>{
+//     if(num%2===0){
+//         acc.even.push(num)
+//     }
+//     else{
+//         acc.odd.push(num)
+//     }
+//     return acc
+// },{even:[],odd:[]})
+// console.log(results)
+
+// let num=[
+//     {name:"Rohit",age:20}
+// ]
+// let result=num.reduce((acc,num)=>{
+//     if(num>=18){
+//         console.log("Yes")
+//     }
+//     else{
+//         console.log("No")
+//     }
+//     return acc
+// },{}) // iska output no kyun kyuki iska jo value and diya hu ye object me isiliye ye object ko nhi leta hai ager ager isko condition ke based pe ager isko  chalna hai to foreach ka used krne chal jaengi.let num=18 ese lete hai to to ye condition chalegi.
+
+
+
+  /*forEach()- forEach() ek javascript array method hai jo har element pe loop chalata hai.
+ syuntax-
+ arr.forEach(arr=>{
+    // code
+ }) */
+// let user=[1,2,3,4,5,6,7]
+// user.forEach(user=>{
+//  console.log(user)
+// })
+
+// let arr=[11,23,44,555]
+// arr.forEach(arr=>{
+//     console.log(arr)
+// })
+
+// let user=[
+//     {name:"Rohit",age:22},
+//     {name:"raju",age:20}
+// ]
+// user.forEach(user=>{
+//     if(user.age>=21){
+//         console.log("yes")
+//     }
+//     else{
+//         console.log("no")
+//     }
+// })
+
+// let user=[12,12,34,444]
+// user.forEach(user=>{
+//     console.log(user)
+// })
+
+// let num=[
+//     {name:"raju",age:21},
+//     {name:"ram",age:23}
+// ]
+// num.forEach(num=>{
+//     if(num.age>=22){
+//         console.log("You are eligible")
+//     }
+//     else{
+//         console.log("You are not eligible")
+//     }
+// })
 
