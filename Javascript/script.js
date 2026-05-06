@@ -4470,3 +4470,142 @@ find = jo pehla item condition satisfy kare usko return karo */
 // let user=["javascript",24,4556,34]
 // console.log(user.includes(24))
 // console.log(user.includes(332))
+
+// Destructring 
+
+// let user=[1,2,3,4]
+// let [a, ,c]=user
+// console.log(a)
+// console.log(c)
+
+// let user={
+//     name:"rohit",
+//     age:23
+// }
+// let{name,age}=user
+// console.log(name)
+// console.log(age)
+
+// let user=[12,12,13,22,12]
+// let[a, ,c,d]=user
+// console.log(a)
+// console.log(c)
+
+// let user={
+//     name:"ak",
+//     age:21,
+//     price:233
+// }
+// let {name,age,price}=user
+// console.log(name)
+// console.log(age)
+// console.log(price)
+
+// let user={
+//     name:"rohit",
+//     age:21,
+//     price:232,
+//     city:"delhi"
+// }
+// function showuser({name,age,price,city}){
+//         console.log(name,age,price,city)
+// }
+// showuser(user)
+
+// let user={
+//     name:"rojhti",
+//     age:23,
+//     city:"delhi"
+// }
+// let{name,age,city}=user
+// console.log(name)
+// console.log(age,city)
+
+// let demo=document.getElementById("demo");
+// console.log("demo")
+//  demo.innerHTML="hello rohit";
+//  demo.style.color="red"
+
+// let input=document.getElementById("input");
+// let btn=document.getElementById("btn");
+// let list=document.getElementById("list");
+
+// btn.addEventListener("click",()=>{
+//     console.log("clicked");
+// })
+
+// let a = document.querySelector("a");
+// a.setAttribute("href","https://www,google.com")
+
+/* Any text ya name print krna ho kuchh iska html code start Node.21-24 tk baki ka jo javascript ye HTMLDetailsElement.
+let input= document.getElementById("input");
+let btn= document.getElementById("btn");
+let list= document.getElementById("list");
+
+input.addEventListener("keydown",(e)=>{
+    if(e.key==="Enter"){
+    btn.click();
+    }
+});
+
+btn.addEventListener("click",()=>{
+    let value= input.value.trim();
+    let items= list.querySelectorAll("li");
+
+    for(let item of items){
+        if (item.innerText.trim().toLowerCase() === value.toLowerCase()){
+        alert("already exits");
+        return;
+    }
+}
+
+    let li=document.createElement("li");
+
+    li.innerText=input.value;
+    input.value="";
+    list.appendChild(li);
+    li.addEventListener("click",()=>{
+        li.remove();
+    });
+}); 
+*/
+
+
+/* conut inc/dec krna no. ko
+let countEl= document.getElementById("count");
+let inc= document.getElementById("inc");
+let dec= document.getElementById("dec");
+
+    let count=0;
+inc.addEventListener("click",()=>{
+        count++;
+        countEl.innerText=count;
+});
+    
+dec.addEventListener("click",()=>{
+    count--;
+    countEl.innerText=count;
+}); */
+
+// let h1= document.createElement("h1");
+//  h1.innerText="hello world rfrgrttgrtgrh";
+//  document.querySelector("body").prepend(h1);
+
+// let h1= document.createElement("h1");
+// h1.innerText="hello vvfdfgfd";
+// document.querySelector("body").append(h1);
+
+// let h1= document.createElement("h1");
+// h1.innerText="hello world";
+// document.querySelector("body").prepend(h1);
+// h1.style.color="red";
+
+// let buynow= document.querySelector(".buy-now");
+// console.log(buynow)
+
+// for(let i=1;i<=n;i++){
+//     for(let j=1;j<=n;j++){
+//         console.log("*")
+//     }
+    
+// }
