@@ -4603,9 +4603,11 @@ dec.addEventListener("click",()=>{
 // let buynow= document.querySelector(".buy-now");
 // console.log(buynow)
 
-// for(let i=1;i<=n;i++){
-//     for(let j=1;j<=n;j++){
-//         console.log("*")
-//     }
-    
-// }
+let n=4;
+for(let i=0;i<n;i++){
+    let row="";
+    for(let j=0;j<n;j++){
+       row+="*"
+    }
+    console.log(row);
+}
