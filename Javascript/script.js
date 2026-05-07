@@ -4649,6 +4649,21 @@ dec.addEventListener("click",()=>{
  let input= document.getElementById("input");
  input.classList.add("active"); */
  
+// let n=5;
+// for(let i=0;i<n;i++){
+//     row="";
+//     for(let j=0;j<=i;j++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
 
- 
- 
+let n=5;
+for(let i=1;i<=n;i++){
+    row="";
+    for(let j=1;j<=i;j++){
+        row+=j;
+    }
+    console.log(row);
+}
+
