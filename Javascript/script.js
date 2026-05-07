@@ -4603,11 +4603,52 @@ dec.addEventListener("click",()=>{
 // let buynow= document.querySelector(".buy-now");
 // console.log(buynow)
 
-let n=4;
-for(let i=0;i<n;i++){
-    let row="";
-    for(let j=0;j<n;j++){
-       row+="*"
-    }
-    console.log(row);
-}
+// let n=4;
+// for(let i=0;i<n;i++){
+//     let row="";
+//     for(let j=0;j<n;j++){
+//        row+="*"
+//     }
+//     console.log(row);
+// }
+
+// let img= document.createElement("img");
+// img.setAttribute(
+//     "src",
+//     "https://plus.unsplash.com/premium_photo-1776182821245-0c532b88e373?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+// ),
+// document.querySelector("div").prepend(img);
+
+// let p = document.querySelector("p")
+// p.forEach (function(ele){
+//     ele.style.fontSize="20px";
+// })
+
+// let h1= document.querySelector("h1");
+// h1.addEventListener("click",function(){
+//     h1.style.color="red";
+// });
+
+// event- jo user action krta hai jaise ki pe click krne pe user action kare jaise ki button click,keybord press,mouse move,input typing.
+
+// let btn= document.getElementById("btn");
+// let input= document.getElementById("btn");
+
+// input.addEventListener("keydown",(e)=>{
+//     console.log(e.key);
+// })
+
+// btn.addEventListener("click",()=>{
+//      alert("clicked")
+// })
+
+/* classlist= classList ka  uesd hm isliye krte hai jo html ke element ke classes ko manages kreta jaise ki koi classes add,remove and change krna tb hm classList kka used krte hai.
+ let btn= document.getElementById("btn");
+ btn.classList.add("passicre") 
+ 
+ let input= document.getElementById("input");
+ input.classList.add("active"); */
+ 
+
+ 
+ 
