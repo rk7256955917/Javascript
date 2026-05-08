@@ -4658,12 +4658,58 @@ dec.addEventListener("click",()=>{
 //     console.log(row);
 // }
 
-let n=5;
-for(let i=1;i<=n;i++){
-    row="";
-    for(let j=1;j<=i;j++){
-        row+=j;
-    }
-    console.log(row);
-}
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=i;j++){
+//         row+=j;
+//     }
+//     console.log(row);
+// }
 
+// let input= document.querySelector("input");
+
+// input.addEventListener("input",()=>{
+//     console.log("typed");
+// });
+
+// let input = document.querySelector("input");
+// input.addEventListener("input",function(dets){
+//     if(dets.data !==null){
+//         console.log(dets.data);
+//     }
+// });
+
+// let select = document.querySelector("select");
+// select.addEventListener("change",(dets)=>{
+//     console.log(dets.target.value);
+// })
+
+// let h1= document.querySelector("#h1");
+
+// window.addEventListener("keydown",function(dets){
+//         if(dets.key ===" "){
+//         h1.textContent="SPC";
+//         }
+//         else{
+//             h1.textContent= dets.key;
+//         };
+// });
+
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=i;j++){
+//         row+=i;
+//     }
+//     console.log(row);
+// }
+
+// let n=5;
+// for(let i=0;i<n;i++){
+//     row="";
+//     for(let j=0;j<n-i;j++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
