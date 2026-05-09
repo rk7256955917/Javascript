@@ -4713,3 +4713,12 @@ dec.addEventListener("click",()=>{
 //     }
 //     console.log(row);
 // }
+
+let n=5;
+for(let i=1;i<=n;i++){
+    row="";
+    for(let j=1;j<=n-i+1;j++){
+        row+=j;
+    }
+    console.log(row);
+}
