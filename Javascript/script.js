@@ -4714,11 +4714,47 @@ dec.addEventListener("click",()=>{
 //     console.log(row);
 // }
 
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=n-i+1;j++){
+//         row+=j;
+//     }
+//     console.log(row);
+// }
+
+// let form= document.getElementById("form");
+
+// form.addEventListener("submit",function(dets){
+//     dets.preventDefault();
+//     let name= document.getElementById("name").value;
+//     let age= document.getElementById("age").value;
+//     let password= document.getElementById("password").value;
+
+//     console.log(name);
+//     console.log(age);
+//     console.log(password);
+// });
+
+// let form= document.querySelector("form");
+// let inputs= document.querySelectorAll("input");
+
+// form.addEventListener("submit",function(dets){
+//     dets.preventDefault();
+//     console.log(inputs[0].value);
+//     console.log(inputs[1].value);
+//     console.log(inputs[2].value);
+//     console.log(inputs[3].value);
+// });
+
 let n=5;
 for(let i=1;i<=n;i++){
     row="";
-    for(let j=1;j<=n-i+1;j++){
-        row+=j;
+    for(let j=1;j<=n-i;j++){
+        row+=" ";
+    }
+    for(let j=1;j<=2*i-1;j++){
+        row+="*";
     }
     console.log(row);
 }
