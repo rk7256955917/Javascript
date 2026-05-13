@@ -4736,25 +4736,83 @@ dec.addEventListener("click",()=>{
 //     console.log(password);
 // });
 
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=n-i;j++){
+//         row+=" ";
+//     }
+//     for(let k=1;k<=2*i-1;k++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
+
+/*git init
+git add .
+git commit -m "first commit"
+git remote add origin REPO_URL
+git branch -M main
+git push -u origin main */
+
 // let form= document.querySelector("form");
 // let inputs= document.querySelectorAll("input");
+// let main= document.querySelector("#main");
 
 // form.addEventListener("submit",function(dets){
 //     dets.preventDefault();
-//     console.log(inputs[0].value);
-//     console.log(inputs[1].value);
-//     console.log(inputs[2].value);
-//     console.log(inputs[3].value);
+    
+//     let card = document.createElement("div");
+//     card.classList.add("card");
+
+//     let profile = document.createElement("div");
+//     profile.classList.add("profile");
+
+//     let img = document.createElement("img");
+//     img.setAttribute("src",inputs[0].value);
+
+//     let h3 = document.createElement("h3");
+//     h3.textContent= inputs[1].value;
+//     let h5= document.createElement("h5");
+//     h5.textContent=inputs[2].value;
+
+//     profile.appendChild(img);
+//     card.appendChild(profile);
+
+//     card.appendChild(h3);
+//     card.appendChild(h5);
+
+//     main.appendChild(card);
+//    inputs.forEach(function (inp){
+//     if(inp.type !=="submit"){
+//         inp.value ="";
+//     }
+//    });
 // });
 
-let n=5;
-for(let i=1;i<=n;i++){
-    row="";
-    for(let j=1;j<=n-i;j++){
-        row+=" ";
-    }
-    for(let j=1;j<=2*i-1;j++){
-        row+="*";
-    }
-    console.log(row);
-}
+
+// let n=5;
+// for(let i=n;i>=1;i--){
+//     row="";
+//     for(let j=1;j<=n-i;j++){
+//         row+=" ";
+//     }
+//     for(let k=1;k<=2*i-1;k++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
+
+let main= document.getElementById("main");
+
+main.addEventListener("mouseover",function(){
+    main.style.backgroundColor="yellow";
+});
+main.addEventListener("mouseout",function(){
+    main.style.backgroundColor="green";
+});
+
+
+
+
+
