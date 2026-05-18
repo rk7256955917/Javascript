@@ -4803,16 +4803,148 @@ git push -u origin main */
 //     console.log(row);
 // }
 
-let main= document.getElementById("main");
+// let main= document.getElementById("main");
 
-main.addEventListener("mouseover",function(){
-    main.style.backgroundColor="yellow";
-});
-main.addEventListener("mouseout",function(){
-    main.style.backgroundColor="green";
-});
+// main.addEventListener("mouseover",function(){
+//     main.style.backgroundColor="yellow";
+// });
+// main.addEventListener("mouseout",function(){
+//     main.style.backgroundColor="green";
+
+/*
+let n = 5;
+
+// Upper Part
+for(let i = 1; i <= n; i++){
+
+    let row = "";
+
+    // Spaces
+    for(let j = 1; j <= n - i; j++){
+        row += " ";
+    }
+
+    // Stars
+    for(let k = 1; k <= (2 * i - 1); k++){
+        row += "*";
+    }
+
+    console.log(row);
+}
 
 
+// Lower Part
+for(let i = n; i >= 1; i--){
 
+    let row = "";
 
+    // Spaces
+    for(let j = 1; j <= n - i; j++){
+        row += " ";
+    }
+
+    // Stars
+    for(let k = 1; k <= (2 * i - 1); k++){
+        row += "*";
+    }
+
+    console.log(row);
+} */
+
+    // let ul= document.querySelector("ul");
+
+    // ul.addEventListener("click",function(){
+    //     alert("clicked")
+    // })
+
+  /*  Event bubbling ek process hai jisme event child element se parent elements ki taraf move karta hai.
+  example-
+  btn.addEventListener("click", function(event){
+
+    event.stopPropagation();
+
+    console.log("Button");
+}); 
+
+| Concept           | Meaning                         |
+| ----------------- | ------------------------------- |
+| Bubbling          | Event niche se upar jata hai    |
+| target            | Kis element pe actual click hua |
+| currentTarget     | Jispe event laga hai            |
+| stopPropagation() | Bubbling rokta hai              |
+*/
+
+/*
+Event Capturing ek process hai jisme event parent elements se child element ki taraf travel karta hai.
+
+example-
+parent.addEventListener("click", function(){
+    console.log("Parent");
+}, true);
+
+btn.addEventListener("click", function(){
+    console.log("Button");
+}, true); */
+
+/*
+Event Delegation ek technique hai jisme parent element pe event listener lagakar child elements ko handle kiya jata hai.
+let tasks = document.getElementById("tasks");
+
+tasks.addEventListener("click", function(event){
+
+   if(event.target.tagName === "LI"){
+      event.target.style.textDecoration = "line-through";
+   }
+
+}); */
+
+// let inp= document.querySelector("input");
+// let span= document.querySelector("span");
+// inp.addEventListener("input",function(){
+//     let left = 12-inp.value.length;
+//     span.textContent= left;
+
+//     if(left<0){
+//         span.style.color="red";
+//     }
+//     else{
+//         span.style.color="white";
+//     }
+// });
+
+// setTimeout(function(){
+//     console.log("hello")
+// })
+
+// setInterval(function(){
+//     console.log("hello")
+// },2000);
+
+// let count=10;
+// let mun= setInterval(function() {
+//     if(count>=0){
+//         console.log(count)
+//         count--;
+//     }
+//     else
+//         clearInterval(mun);
+// },1000);
+
+// let pro = document.querySelector(".progress-bar");
+
+// let count = 0;
+
+// setInterval(function(){
+
+//     if(count < 100){
+
+//         count++;
+
+//         pro.style.width = `${count}%`;
+
+//     }
+
+// }, 40);
+
+ localStorage.setItem("name","rohit");
 
