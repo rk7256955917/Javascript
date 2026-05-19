@@ -4946,5 +4946,58 @@ tasks.addEventListener("click", function(event){
 
 // }, 40);
 
- localStorage.setItem("name","rohit");
+//  localStorage.setItem("name","rohit");
 
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=i;j++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<n-i+1;j++){
+//         row+="*";
+//     }
+//     console.log(row);
+// }
+
+//  let n=5;
+//  for(let i=0;i<n;i++){
+//    let start=1;
+//     if(i%2){
+//     start=0;
+//     }
+//   let row="";
+//         for(let j=0;j<=i;j++){
+//             row+= start+" ";
+//             start= !start;
+//         }
+//         console.log(row);
+//     }
+
+
+let n = 5;
+
+for(let i = 0; i <n; i++) {
+
+    let start = 1;
+
+    if(i % 2){
+        start = 0;
+    }
+
+    let row = "";
+
+    for(let j = 0; j <= i; j++) {
+
+        row += start + " ";
+
+        start = 1-start;
+    }
+
+    console.log(row);
+
+}
