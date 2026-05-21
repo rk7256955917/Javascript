@@ -4979,25 +4979,146 @@ tasks.addEventListener("click", function(event){
 //     }
 
 
-let n = 5;
+// let n = 5;
 
-for(let i = 0; i <n; i++) {
+// for(let i = 0; i <n; i++) {
 
-    let start = 1;
+//     let start = 1;
 
-    if(i % 2){
-        start = 0;
-    }
+//     if(i % 2){
+//         start = 0;
+//     }
 
-    let row = "";
+//     let row = "";
 
-    for(let j = 0; j <= i; j++) {
+//     for(let j = 0; j <= i; j++) {
 
-        row += start + " ";
+//         row += start + " ";
 
-        start = 1-start;
-    }
+//         start = 1-start;
+//     }
 
-    console.log(row);
+//     console.log(row);
 
-}
+// }
+
+// function clickLimiter(){
+//     let click=0;
+//     return function(){
+//         if(click<5){
+//             click++;
+//             console.log(`clicked:${click} times`);
+//         }
+//         else{
+//             console.log(" limit exceeds");
+//         }
+//     }
+// }
+// let fun= clickLimiter();
+// fun();
+// fun();
+// fun();
+// fun();
+// fun();
+// fun();
+
+// function CreateToaster(config){
+//     return function(str){
+//         let div= document.createElement("div");
+//         div.textContent= str;
+//         div.className=`inline-block ${config.theme === "dark"? "bg-gray-800 text-white": "bg-gray-100 text-black"} px-6 py-3 rounded shadow-lg pointer-events-none`;
+
+//         document.querySelector(".parent").appendChild(div);
+
+//         if(config.positionX !== "left" || positionY !=="top"){
+//             document.querySelector(".parent").className +=
+//             `${config.positionX ==="right" ? "right-5":"left-5"} ${config.positionY==="bottom" ? "bottom-5":"top-5"}`;
+//         }
+//         setTimeout(()=>{
+//             document.querySelector("parent").removeChild(div);
+//         },config.duration*1000);
+//         };
+//         }
+        
+//     let toaster = CreateToaster({
+//         positionX:"right",
+//         positionY:"bottom",
+//         theme:"light",
+//         duration:3,
+//     });
+//     toaster("Download Done");
+//     setTimeout(()=>{
+//         toaster("Rohit accepted your request");
+//     },2000);
+
+//     setTimeout(()=>{
+//       toaster("Rahul accepted your message");
+//     })
+
+//        setTimeout(()=>{
+//       toaster("Roshan accepted your message");
+//     })
+
+// let obj={
+//     name:"rohit",
+//     age:23,
+//     sayName:function(){
+//         console.log(this.name +" "+this.age);
+//     }
+// }
+// obj.sayName();
+
+// let user1={
+//     name:"rohit",
+//     age:23,
+// };
+// let user2={
+//     name:"rohan",
+//     age:24,
+// };
+// function hello(){
+//     console.log(this.name + " "+this.age);
+// };
+// hello.call(user1);
+// hello.call(user2);
+
+// let user={
+//     name:"rohit"
+// };
+// function hello(){
+//     console.log(this.name);
+// };
+// hello.apply(user);
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// sum.apply(this,[10,13]);
+
+// let user1={
+//     name:"rohit",
+//     age:23,
+// };
+// let user2={
+//     name:"rahul",
+//     age:23,
+// };
+// function hello(){
+//     console.log(this.name +" "+ this.age);
+// };
+// hello.apply(user1);
+// hello.apply(user2);
+
+// function abcd(a,b,c){
+//     console.log(a+b+c);
+// }
+// abcd.apply(this,[10,10,10]);
+
+let user={
+    name:"rohit",
+};
+function hello(){
+    console.log(this.name);
+};
+let results= hello.bind(user);
+results();
