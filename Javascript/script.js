@@ -3,6 +3,8 @@
 // console.log(body.childs)
 //callback_hell
 
+// const { createElement } = require("react");
+
 // h1=document.querySelector('#h1')
 // h2=document.querySelector('#h2')
 // h3=document.querySelector('#h3')
@@ -5114,11 +5116,112 @@ tasks.addEventListener("click", function(event){
 // }
 // abcd.apply(this,[10,10,10]);
 
-let user={
-    name:"rohit",
-};
-function hello(){
-    console.log(this.name);
-};
-let results= hello.bind(user);
-results();
+// let user={
+//     name:"rohit",
+// };
+// function hello(){
+//     console.log(this.name);
+// };
+// let results= hello.bind(user);
+// results();
+
+/*Q1.
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a=10;
+let b=20;
+const c=30;
+op- undefined,ReferenceError,ReferenceError
+
+var hoist hoke undefined deta hai,
+lekin let aur const TDZ me rehte hain,
+isliye declaration se pehle access karne pe error dete hain.*/
+
+/*Q2.
+    function test(){
+    console.log(x); //undefined
+    var x=5;
+    console.log(x); // 5
+
+    if(true){
+        let x=99;
+        console.log(x); // 99
+    }
+    console.log(x);// 5
+}
+test();
+op- undefined,5,99,5. */
+
+// let from= document.getElementById("from");
+// let name= document.getElementById("name");
+// let rol= document.getElementById("role");
+// let bio= document.getElementById("bio");
+// let photo= document.getElementById("photo");
+// let card = document.querySelector(".cards");
+
+// // addUser()
+// // user:name.value;
+// // rol:rol.value;
+// // bio:bio.value;
+// // photo:photo.value;
+
+
+
+// from.addEventListener("submit",function(dets){
+//     dets.preventDefault();
+
+//     let div = document.createElement("div");
+//     div.classList.add("card");
+    
+// });
+
+let form = document.getElementById("form");
+
+let name = document.getElementById("name");
+
+let rol = document.getElementById("role");
+
+let bio = document.getElementById("bio");
+
+let photo = document.getElementById("photo");
+
+let card = document.querySelector(".cards");
+
+
+form.addEventListener("submit", function(dets){
+
+    dets.preventDefault();
+
+
+    let div = document.createElement("div");
+
+    div.classList.add("card");
+
+
+    div.innerHTML = `
+
+        <img src="${photo.value}">
+
+        <h2>${name.value}</h2>
+
+        <h4>${role.value}</h4>
+
+        <p>${bio.value}</p>
+
+    `;
+
+
+    card.appendChild(div);
+
+
+    name.value = "";
+
+    role.value = "";
+
+    bio.value = "";
+
+    photo.value = "";
+
+});
