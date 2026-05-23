@@ -5177,51 +5177,77 @@ op- undefined,5,99,5. */
     
 // });
 
-let form = document.getElementById("form");
+let n=5;
+for(let i=1;i<=n;i++){
+  let row="";
+    for(let j=1;j<=i;j++){
+        row+=j;
+    }
 
-let name = document.getElementById("name");
-
-let rol = document.getElementById("role");
-
-let bio = document.getElementById("bio");
-
-let photo = document.getElementById("photo");
-
-let card = document.querySelector(".cards");
-
-
-form.addEventListener("submit", function(dets){
-
-    dets.preventDefault();
-
-
-    let div = document.createElement("div");
-
-    div.classList.add("card");
+    for(let j=1;j<=(n-i)*2;j++){
+    row+=" ";
+    }
+    for(let j=i;j>=1;j--){
+        row+=j;
+    }
+    console.log(row);
+}
 
 
-    div.innerHTML = `
-
-        <img src="${photo.value}">
-
-        <h2>${name.value}</h2>
-
-        <h4>${role.value}</h4>
-
-        <p>${bio.value}</p>
-
-    `;
 
 
-    card.appendChild(div);
 
 
-    name.value = "";
 
-    role.value = "";
 
-    bio.value = "";
 
-    photo.value = "";
 
-});
+
+// let form = document.getElementById("form");
+
+// let name = document.getElementById("name");
+
+// let rol = document.getElementById("role");
+
+// let bio = document.getElementById("bio");
+
+// let photo = document.getElementById("photo");
+
+// let card = document.querySelector(".cards");
+
+
+// form.addEventListener("submit", function(dets){
+
+//     dets.preventDefault();
+
+
+//     let div = document.createElement("div");
+
+//     div.classList.add("card");
+
+
+//     div.innerHTML = `
+
+//         <img src="${photo.value}">
+
+//         <h2>${name.value}</h2>
+
+//         <h4>${role.value}</h4>
+
+//         <p>${bio.value}</p>
+
+//     `;
+
+
+//     card.appendChild(div);
+
+
+//     name.value = "";
+
+//     role.value = "";
+
+//     bio.value = "";
+
+//     photo.value = "";
+
+// });
