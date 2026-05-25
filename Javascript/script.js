@@ -5262,16 +5262,36 @@ op- undefined,5,99,5. */
 // }
 // let biscuit1= new CreateBiscuits("oreo",10,5,"blackberry");
 
-function Createpencile(name,price,company,color){
-    this.name=name;
-    this.price=price;
-    this.company=company;
-    this.color=color;
-    this.write= function(){
-        let h1= document.createElement("h1");
-        h1.textContent="hi";
-        h1.style.color="blue";
-        document.body.append(h1);
-    };
+// function Createpencile(name,price,company,color){
+//     this.name=name;
+//     this.price=price;
+//     this.company=company;
+//     this.color=color;
+//     this.write= function(){
+//         let h1= document.createElement("h1");
+//         h1.textContent="hi";
+//         h1.style.color="blue";
+//         document.body.append(h1);
+//     };
+// }
+// let  pencile = new Createpencile("natraj",10,"honda","black")
+
+// let n=5;
+// let count=1;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=i;j++){
+//         row+= count + " ";
+//         count++;
+//     }
+//     console.log(row);
+// }
+
+let n=5;
+for(let i=0;i<n;i++){
+    row="";
+    for(let j=0;j<=i;j++){
+        row+= String.fromCharCode(65+j); 
+    }
+  console.log(row);
 }
-let  pencile = new Createpencile("natraj",10,"honda","black")
