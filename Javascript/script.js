@@ -5267,10 +5267,10 @@ op- undefined,5,99,5. */
 //     this.price=price;
 //     this.company=company;
 //     this.color=color;
-//     this.write= function(){
+//     this.write= function(text){
 //         let h1= document.createElement("h1");
-//         h1.textContent="hi";
-//         h1.style.color="blue";
+//         h1.textContent= text;
+//         h1.style.color=color;
 //         document.body.append(h1);
 //     };
 // }
@@ -5287,11 +5287,38 @@ op- undefined,5,99,5. */
 //     console.log(row);
 // }
 
+// let n=5;
+// for(let i=0;i<n;i++){
+//     row="";
+//     for(let j=0;j<=i;j++){
+//         row+= String.fromCharCode(65+j); 
+//     }
+//   console.log(row);
+// }
+
+/*
+prototype-
+ek object dusre object ki properties
+aur methods ko access kar sakta hai
+
+let arr = [1,2,3];
+arr.push(4);
+console.log(arr); */
+
+// let n=5;
+// for(let i=0;i<n;i++){
+//     row="";
+//     for(let j=0;j<=n-i;j++){
+//         row+=String.fromCharCode(65+j);
+//     }
+//     console.log(row);
+// };
+
 let n=5;
-for(let i=0;i<n;i++){
+for(let i=0;i<=n;i++){
     row="";
-    for(let j=0;j<=i;j++){
-        row+= String.fromCharCode(65+j); 
+    for(let j=0;j<=n;j++){
+        row+=String.fromCharCode(65+j);
     }
-  console.log(row);
+    console.log(row);
 }
