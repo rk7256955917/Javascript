@@ -5342,15 +5342,39 @@ console.log(arr); */
 //         console.log("hey")
 //     });
 
-let pr = new Promise(function(res,rej){
-    setTimeout(()=>{
-        let rn= Math.floor(Math.random()*10);
-        if(rn>5) res("resolved with"+rn);
-        else rej("rejected with"+ rn);
-    },3000);
-});
-pr.then(function(val){
-    console.log(val);
-}).catch(function(val){
-    console.log(val);
-});
+// let pr = new Promise(function(res,rej){
+//     setTimeout(()=>{
+//         let rn= Math.floor(Math.random()*10);
+//         if(rn>5) res("resolved with"+rn);
+//         else rej("rejected with"+ rn);
+//     },3000);
+// });
+// pr.then(function(val){
+//     console.log(val);
+// }).catch(function(val){
+//     console.log(val);
+// });
+
+// let n=5;
+// for(let i=0;i<n;i++){
+//     row="";
+//     for(let j=0;j<=n-i;j++){
+//         row+= String.fromCharCode(65+2n);
+//     }
+//  console.log(row);
+// }
+
+let n=5;
+for(let i=0; i<n; i++){
+    row="";
+    for(let j=0;j<n-i-1;j++){
+        row+=" ";
+    }
+    for(let j=0;j<=i;j++){
+        row+=String.fromCharCode(65+j);
+    }
+    for(let j=i-1;j>=0;j--){
+        row+=String.fromCharCode(65+j);
+    }
+    console.log(row);
+}
