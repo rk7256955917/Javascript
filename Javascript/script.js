@@ -5364,17 +5364,42 @@ console.log(arr); */
 //  console.log(row);
 // }
 
-let n=5;
-for(let i=0; i<n; i++){
-    row="";
-    for(let j=0;j<n-i-1;j++){
-        row+=" ";
+// let n=5;
+// for(let i=0; i<n; i++){
+//     row="";
+//     for(let j=0;j<n-i-1;j++){
+//         row+=" ";
+//     }
+//     for(let j=0;j<=i;j++){
+//         row+=String.fromCharCode(65+j);
+//     }
+//     for(let j=i-1;j>=0;j--){
+//         row+=String.fromCharCode(65+j);
+//     }
+//     console.log(row);
+// }
+
+// function countDigits(n) {
+//     if (n === 0) return 1;
+
+//     let count = 0;
+
+//     while (n > 0) {
+//         count++;
+//         n = Math.floor(n / 10);
+//     }
+
+//     return count;
+// }
+// console.log(countDigits(12345))
+
+function reversenum (num){
+  let reverse=0;
+    while(num>0){
+        let lastDigit= num%10;
+        reverse=(reverse*10)+lastDigit;
+        num=Math.floor(num/10);
     }
-    for(let j=0;j<=i;j++){
-        row+=String.fromCharCode(65+j);
-    }
-    for(let j=i-1;j>=0;j--){
-        row+=String.fromCharCode(65+j);
-    }
-    console.log(row);
+    return reverse;
 }
+console.log(reversenum(1234)); 
