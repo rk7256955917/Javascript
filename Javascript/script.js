@@ -5393,13 +5393,50 @@ console.log(arr); */
 // }
 // console.log(countDigits(12345))
 
-function reversenum (num){
-  let reverse=0;
-    while(num>0){
-        let lastDigit= num%10;
-        reverse=(reverse*10)+lastDigit;
-        num=Math.floor(num/10);
+// function reversenum (num){
+//   let reverse=0;
+//     while(num>0){
+//         let lastDigit= num%10;
+//         reverse=(reverse*10)+lastDigit;
+//         num=Math.floor(num/10);
+//     }
+//     return reverse;
+// }
+// console.log(reversenum(1234)); 
+
+// boolfunction(num){
+//     revNumber= reverse(num)
+//     return(num==revNumber)
+// };
+// console.log(101);
+
+// function palindrome(num){
+//     let original=num;
+//     let reverse=0;
+//     while(num>0){
+//         let lastDigit= num%10;
+//         reverse=(reverse*10)+lastDigit;
+//         num=Math.floor(num/10);
+//     }
+//     return original==reverse;
+// }
+// console.log(palindrome(102));
+// console.log(palindrome(101));
+
+ function GCD(n1,n2){
+    while(n1!=0 && n2!=0){
+        if(n1>n2){
+            n1=n1%n2;
+        }
+        else{
+            n2=n2%n1;
+        }
     }
-    return reverse;
-}
-console.log(reversenum(1234)); 
+        if(n1==0){
+        return n2; 
+        } 
+        else{
+            return n1;
+        }
+    }
+console.log(GCD(4,8));
