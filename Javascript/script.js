@@ -5423,20 +5423,34 @@ console.log(arr); */
 // console.log(palindrome(102));
 // console.log(palindrome(101));
 
- function GCD(n1,n2){
-    while(n1!=0 && n2!=0){
-        if(n1>n2){
-            n1=n1%n2;
-        }
-        else{
-            n2=n2%n1;
-        }
+//  function GCD(n1,n2){
+//     while(n1!=0 && n2!=0){
+//         if(n1>n2){
+//             n1=n1%n2;
+//         }
+//         else{
+//             n2=n2%n1;
+//         }
+//     }
+//         if(n1==0){
+//         return n2; 
+//         } 
+//         else{
+//             return n1;
+//         }
+//     }
+// console.log(GCD(4,8));
+
+function armstrong(num){
+    let original= num;
+    let count= num.toString().length;
+    let sum=0;
+    while(num>0){
+      let lastDigit=num%10;
+        sum=sum+Math.pow(lastDigit,count)
+        num=Math.floor(num/10);
     }
-        if(n1==0){
-        return n2; 
-        } 
-        else{
-            return n1;
-        }
-    }
-console.log(GCD(4,8));
+    return original==sum;
+}
+console.log(armstrong(153));
+console.log(armstrong(123));
