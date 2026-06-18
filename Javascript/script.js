@@ -5441,16 +5441,28 @@ console.log(arr); */
 //     }
 // console.log(GCD(4,8));
 
-function armstrong(num){
-    let original= num;
-    let count= num.toString().length;
-    let sum=0;
-    while(num>0){
-      let lastDigit=num%10;
-        sum=sum+Math.pow(lastDigit,count)
-        num=Math.floor(num/10);
+// function armstrong(num){
+//     let original= num;
+//     let count= num.toString().length;
+//     let sum=0;
+//     while(num>0){
+//       let lastDigit=num%10;
+//         sum=sum+Math.pow(lastDigit,count)
+//         num=Math.floor(num/10);
+//     }
+//     return original==sum;
+// }
+// console.log(armstrong(153));
+// console.log(armstrong(123));
+
+function divisors(n){
+    let list=[]
+    for(let i=1;i<=n;i++){
+        if(n%i===0){
+            list.push(i);
+        }
+        
     }
-    return original==sum;
+    return list;
 }
-console.log(armstrong(153));
-console.log(armstrong(123));
+console.log(divisors(6));
