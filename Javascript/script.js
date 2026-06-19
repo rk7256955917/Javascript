@@ -5455,14 +5455,27 @@ console.log(arr); */
 // console.log(armstrong(153));
 // console.log(armstrong(123));
 
-function divisors(n){
-    let list=[]
-    for(let i=1;i<=n;i++){
-        if(n%i===0){
-            list.push(i);
-        }
+// function divisors(n){
+//     let list=[]
+//     for(let i=1;i<=n;i++){
+//         if(n%i===0){
+//             list.push(i);
+//         }
         
+//     }
+//     return list;
+// }
+// console.log(divisors(6));
+
+ function isprime(n){
+    if(n<2) return false;
+    for(let i=2;i<n;i++){
+        if(n%i===0){
+            return false;
+        }
+         
     }
-    return list;
+    return true;
 }
-console.log(divisors(6));
+console.log(isprime(18));
+console.log(isprime(17));
