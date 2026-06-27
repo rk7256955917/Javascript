@@ -5467,15 +5467,72 @@ console.log(arr); */
 // }
 // console.log(divisors(6));
 
- function isprime(n){
-    if(n<2) return false;
-    for(let i=2;i<n;i++){
-        if(n%i===0){
-            return false;
-        }
+//  function isprime(n){
+//     if(n<2) return false;
+//     for(let i=2;i<n;i++){
+//         if(n%i===0){
+//             return false;
+//         }
          
+//     }
+//     return true;
+// }
+// console.log(isprime(18));
+// console.log(isprime(17));
+
+// class Solution {
+
+//     helper(current, n) {
+//         if (current > n) return;
+
+//         console.log(current);
+
+//         this.helper(current + 1, n);
+//     }
+
+//     printNumbers(n) {
+//         this.helper(1, n);
+//     }
+// }
+
+// const sol = new Solution();
+// const n = 10;
+
+// sol.printNumbers(n);
+
+// class Solution {
+//     helper(current,n){
+//         if(current<1) return;
+//         console.log(current);
+//         this.helper(current-1);
+//     }
+//     printNumbers(n){
+//         this.helper(n);
+//     }
+// }
+// const sol = new Solution();
+// const n=5;
+// sol.printNumbers(n);
+
+// function fact(n){
+// let ans= 1;
+// for(let i=1;i<=n;i++){
+//     ans= ans*i;
+// }
+// return ans;
+// }
+// console.log(fact(4));
+
+function reverse(arr,n){
+ let left=0; 
+ let right= n-1;
+    while(left<right){
+        let temp= arr[left];
+        arr[left]= arr[right];
+        arr [right]= temp;
+        left++;
+        right--;
     }
-    return true;
+  return arr;
 }
-console.log(isprime(18));
-console.log(isprime(17));
+console.log(reverse([1,2,3,4,5],5));
