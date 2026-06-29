@@ -5523,16 +5523,31 @@ console.log(arr); */
 // }
 // console.log(fact(4));
 
-function reverse(arr,n){
- let left=0; 
- let right= n-1;
-    while(left<right){
-        let temp= arr[left];
-        arr[left]= arr[right];
-        arr [right]= temp;
-        left++;
-        right--;
+// function reverse(arr,n){
+//  let left=0; 
+//  let right= n-1;
+//     while(left<right){
+//         let temp= arr[left];
+//         arr[left]= arr[right];
+//         arr [right]= temp;
+//         left++;
+//         right--;
+//     }
+//   return arr;
+// }
+// console.log(reverse([1,2,3,4,5],5));
+
+function palindromeCheck(s){
+    let l=0; 
+    let r= s.length-1;
+    while(l<r){
+        if(s[l]!==s[r]){;
+        return false;
     }
-  return arr;
+    l++;
+     r--;
 }
-console.log(reverse([1,2,3,4,5],5));
+ return true;
+}
+console.log(palindromeCheck("madam"));
+console.log(palindromeCheck("rohit"));
