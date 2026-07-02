@@ -5537,17 +5537,30 @@ console.log(arr); */
 // }
 // console.log(reverse([1,2,3,4,5],5));
 
-function palindromeCheck(s){
-    let l=0; 
-    let r= s.length-1;
-    while(l<r){
-        if(s[l]!==s[r]){;
-        return false;
-    }
-    l++;
-     r--;
+// function palindromeCheck(s){
+//     let l=0; 
+//     let r= s.length-1;
+//     while(l<r){
+//         if(s[l]!==s[r]){;
+//         return false;
+//     }
+//     l++;
+//      r--;
+// }
+//  return true;
+// }
+// console.log(palindromeCheck("madam"));
+// console.log(palindromeCheck("rohit"));
+
+let arr=[10,11,13,9,15];
+for(let i=0;i<arr.length-1;i++){
+  let min=i;
+for(let j=i+1;j<arr.length;j++){
+    if(arr[j] < arr[min]){
+    min = j;
+    [arr[i], arr[min]] = [arr[min], arr[i]];
 }
- return true;
 }
-console.log(palindromeCheck("madam"));
-console.log(palindromeCheck("rohit"));
+
+}
+console.log(arr);
