@@ -5552,15 +5552,26 @@ console.log(arr); */
 // console.log(palindromeCheck("madam"));
 // console.log(palindromeCheck("rohit"));
 
-let arr=[10,11,13,9,15];
-for(let i=0;i<arr.length-1;i++){
-  let min=i;
-for(let j=i+1;j<arr.length;j++){
-    if(arr[j] < arr[min]){
-    min = j;
-    [arr[i], arr[min]] = [arr[min], arr[i]];
-}
-}
+// let arr=[10,11,13,9,15];
+// for(let i=0;i<arr.length-1;i++){
+//   let min=i;
+// for(let j=i+1;j<arr.length;j++){
+//     if(arr[j] < arr[min]){
+//     min = j;
+//     [arr[i], arr[min]] = [arr[min], arr[i]];
+// }
+// }
 
+// }
+// console.log(arr);
+
+let n =[12,20,13,11,50];
+for(let i=n.length-1;i>0;i--){
+    for(let j=0;j<=i-1;j++){
+        if(n[j]>n[j+1]){
+             [n[j],n[j+1]]=[n[j+1],n[j]];
+        }
+  
+    } 
 }
-console.log(arr);
+console.log(n);
