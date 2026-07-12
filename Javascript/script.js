@@ -5565,13 +5565,72 @@ console.log(arr); */
 // }
 // console.log(arr);
 
-let n =[12,20,13,11,50];
-for(let i=n.length-1;i>0;i--){
-    for(let j=0;j<=i-1;j++){
-        if(n[j]>n[j+1]){
-             [n[j],n[j+1]]=[n[j+1],n[j]];
-        }
+// let n =[12,20,13,11,50];
+// for(let i=n.length-1;i>0;i--){
+//     for(let j=0;j<=i-1;j++){
+//         if(n[j]>n[j+1]){
+//              [n[j],n[j+1]]=[n[j+1],n[j]];
+//         }
   
-    } 
+//     } 
+// }
+// console.log(n);
+
+//  function bubbleSort(nums){
+//     let nums= n.length-1;
+//     for(let i=0;i<nums.length-1;i++){
+       
+//     }
+// }
+
+
+
+class Solution {
+
+    quickSort(arr, low, high) {
+
+        if (low < high) {
+
+            let index = this.partition(arr, low, high);
+
+            this.quickSort(arr, low, index - 1);
+            this.quickSort(arr, index + 1, high);
+        }
+
+        return arr;
+    }
+
+    partition(arr, low, high) {
+
+        let pivot = arr[low];
+        let i = low;
+        let j = high;
+
+        while (i < j) {
+
+            while (arr[i] <= pivot && i <= high - 1) {
+                i++;
+            }
+
+            while (arr[j] > pivot && j >= low + 1) {
+                j--;
+            }
+
+            if (i < j) {
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+        }
+
+        [arr[low], arr[j]] = [arr[j], arr[low]];
+
+        return j;
+    }
+
 }
-console.log(n);
+
+let arr = [1, 3, 34, 4, 5, 2, 10];
+
+let obj = new Solution();
+
+console.log(obj.quickSort(arr, 0, arr.length - 1));
+
