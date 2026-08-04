@@ -5585,52 +5585,165 @@ console.log(arr); */
 
 
 
-class Solution {
+// class Solution {
 
-    quickSort(arr, low, high) {
+//     quickSort(arr, low, high) {
 
-        if (low < high) {
+//         if (low < high) {
 
-            let index = this.partition(arr, low, high);
+//             let index = this.partition(arr, low, high);
 
-            this.quickSort(arr, low, index - 1);
-            this.quickSort(arr, index + 1, high);
-        }
+//             this.quickSort(arr, low, index - 1);
+//             this.quickSort(arr, index + 1, high);
+//         }
 
-        return arr;
-    }
+//         return arr;
+//     }
 
-    partition(arr, low, high) {
+//     partition(arr, low, high) {
 
-        let pivot = arr[low];
-        let i = low;
-        let j = high;
+//         let pivot = arr[low];
+//         let i = low;
+//         let j = high;
 
-        while (i < j) {
+//         while (i < j) {
 
-            while (arr[i] <= pivot && i <= high - 1) {
-                i++;
-            }
+//             while (arr[i] <= pivot && i <= high - 1) {
+//                 i++;
+//             }
 
-            while (arr[j] > pivot && j >= low + 1) {
-                j--;
-            }
+//             while (arr[j] > pivot && j >= low + 1) {
+//                 j--;
+//             }
 
-            if (i < j) {
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-            }
-        }
+//             if (i < j) {
+//                 [arr[i], arr[j]] = [arr[j], arr[i]];
+//             }
+//         }
 
-        [arr[low], arr[j]] = [arr[j], arr[low]];
+//         [arr[low], arr[j]] = [arr[j], arr[low]];
 
-        return j;
-    }
+//         return j;
+//     }
 
+// }
+
+// let arr = [1, 3, 34, 4, 5, 2, 10];
+
+// let obj = new Solution();
+
+// console.log(obj.quickSort(arr, 0, arr.length - 1));
+
+// let arr=[3,5,2,10,9,4];
+// let largest=arr[0];
+// for(let i=1;i<arr.length;i++){
+//     if(arr[i]>largest){
+//         largest=arr[i];
+//     }
+// }
+// console.log(largest);
+
+
+
+
+
+// 1.
+// let marks=75;
+// if (marks>=75){
+//     console.log("Grade:A+")
+// }
+//     else if(marks>=75){
+//         console.log("Grade:A")
+//     }
+//     else if(marks>=60){
+//         console.log("Grade:B")
+//     }
+//     else if(marks>=45){
+//         console.log("Grade:C")
+//     }
+//     else{
+//         console.log("Grade:fail")
+//     }
+
+// 2.
+//   let num=10;
+//   if(num%2==0 || num%3==0 && num%5==0 || num%7==0){
+//     console.log("positive")
+//   }
+//   else{
+//      console.log("zero");
+//   }
+  
+
+// 3.
+//  let num=100;
+//  if(num%3==0 && num%5==0){
+//     console.log("Fizz")
+//  }
+//  else if(num%5) {
+//     console.log("Buzz")
+//  }
+// else{
+//     console.log("FizzBuzz")
+// }
+
+
+// 4.
+//   let table=7;
+//   for(let i=1;i<=10;i++){
+//     console.log(i*table);
+//   }
+
+
+// 1.
+// function calculateFare(distance, waitingTime, surge) {
+   
+//     let fare = 50;
+//     let distanceCharge = distance*12;
+//     fare = fare + distanceCharge;
+
+//     let waitingCharge = waitingTime*2;
+//     fare = fare + waitingCharge;
+//     if(surge==true){
+//     fare = fare + fare * 0.5;
+
+//     if(fare>1000){
+//        let discount = fare* 0.05;
+//         fare = fare - discount;
+//     }
+//     console.log(fare);
+// }
+// }
+// calculateFare(50,10,true);
+
+//  function applyCopon (totalAmount,coupon){
+//    let discount =0;
+
+//    if(coupon==="SAVE10"){
+//     discount = totalAmount*0.10;
+//    }
+//    else if(coupon==="SAVE20"){
+//     discount = totalAmount*0.20;
+//    }
+//    else if(coupon==="WELCOME"){
+//     discount =150;
+//    }
+//    else if(coupon==="FREESHIP"){
+//     discount = 80;
+//    }
+//    else{
+//     discount = 0;
+//    }
+//    let finalPrice = totalAmount-discount;
+//    console.log("Original Price:",totalAmount);
+//    console.log("Discount:",discount);
+//    console.log("Final Price:",finalPrice);
+// }
+// applyCopon(2000,"SAVE20");
+
+function generateUsername(firstName,lastName,birthYear){
+   let lastTwoDigits = String(birthYear%100).padStart(2,"0");
+   console.log(firstName+"_"+lastName+lastTwoDigits);
 }
-
-let arr = [1, 3, 34, 4, 5, 2, 10];
-
-let obj = new Solution();
-
-console.log(obj.quickSort(arr, 0, arr.length - 1));
-
+generateUsername("Rohit","Singh",1994);
+generateUsername("Rahul","Sharma",2005);
