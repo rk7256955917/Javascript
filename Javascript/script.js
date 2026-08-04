@@ -5741,9 +5741,44 @@ console.log(arr); */
 // }
 // applyCopon(2000,"SAVE20");
 
-function generateUsername(firstName,lastName,birthYear){
-   let lastTwoDigits = String(birthYear%100).padStart(2,"0");
-   console.log(firstName+"_"+lastName+lastTwoDigits);
-}
-generateUsername("Rohit","Singh",1994);
-generateUsername("Rahul","Sharma",2005);
+// function generateUsername(firstName,lastName,birthYear){
+//    let lastTwoDigits = String(birthYear%100).padStart(2,"0");
+//    console.log(firstName+"_"+lastName+lastTwoDigits);
+// }
+// generateUsername("Rohit","Singh",1994);
+// generateUsername("Rahul","Sharma",2005);
+
+function calculateParkingBill(entryHour,exitHour,vehicleType){
+    let totalHours;
+    let rate;
+    if(exitHour >= entryHour){
+        totalHours = exitHour-entryHour;
+    }
+    else {
+        totalHours =(24-entryHour)+exitHour;
+    }
+       if(vehicleType ==="Bike"){
+        rate=20;
+      }
+       if(vehicleType ==="Car"){
+        rate=50;
+      }
+      if(vehicleType==="SUV"){
+        rate=80;
+      }
+
+      let bill = totalHours * rate;
+      if(totalHours>8){
+        bill = bill-100;
+      }
+      
+      if(totalHours>24){
+        console.log("Invalid Parking");
+        return;
+      }
+      console.log(totalHours);
+      console.log(vehicleType);
+      console.log(bill);
+    }
+    calculateParkingBill(10,15,"Car");
+
