@@ -5783,11 +5783,15 @@ console.log(arr); */
 //     calculateParkingBill(10,15,"Car");
 
 let salaries =[45000,78000,56000,92000,67000,92000,51000];
-let heighest =-1;
+let heighest =salaries[0];
+let secondHeighest=salaries[0];
 
 for(let i=0;i<salaries.length;i++){
     if(salaries[i]>heighest){
-   heighest=salaries[i];
+   heighest = salaries[i];
+}
+else if(salaries[i]>secondHeighest && salaries[i]<heighest){
+     secondHeighest=heighest;
 }
 }
-console.log(heighest);
+console.log(heighest,secondHeighest);
