@@ -5748,37 +5748,46 @@ console.log(arr); */
 // generateUsername("Rohit","Singh",1994);
 // generateUsername("Rahul","Sharma",2005);
 
-function calculateParkingBill(entryHour,exitHour,vehicleType){
-    let totalHours;
-    let rate;
-    if(exitHour >= entryHour){
-        totalHours = exitHour-entryHour;
-    }
-    else {
-        totalHours =(24-entryHour)+exitHour;
-    }
-       if(vehicleType ==="Bike"){
-        rate=20;
-      }
-       if(vehicleType ==="Car"){
-        rate=50;
-      }
-      if(vehicleType==="SUV"){
-        rate=80;
-      }
+// function calculateParkingBill(entryHour,exitHour,vehicleType){
+//     let totalHours;
+//     let rate;
+//     if(exitHour >= entryHour){
+//         totalHours = exitHour-entryHour;
+//     }
+//     else {
+//         totalHours =(24-entryHour)+exitHour;
+//     }
+//        if(vehicleType ==="Bike"){
+//         rate=20;
+//       }
+//        if(vehicleType ==="Car"){
+//         rate=50;
+//       }
+//       if(vehicleType==="SUV"){
+//         rate=80;
+//       }
 
-      let bill = totalHours * rate;
-      if(totalHours>8){
-        bill = bill-100;
-      }
+//       let bill = totalHours * rate;
+//       if(totalHours>8){
+//         bill = bill-100;
+//       }
       
-      if(totalHours>24){
-        console.log("Invalid Parking");
-        return;
-      }
-      console.log(totalHours);
-      console.log(vehicleType);
-      console.log(bill);
-    }
-    calculateParkingBill(10,15,"Car");
+//       if(totalHours>24){
+//         console.log("Invalid Parking");
+//         return;
+//       }
+//       console.log(totalHours);
+//       console.log(vehicleType);
+//       console.log(bill);
+//     }
+//     calculateParkingBill(10,15,"Car");
 
+let salaries =[45000,78000,56000,92000,67000,92000,51000];
+let heighest =-1;
+
+for(let i=0;i<salaries.length;i++){
+    if(salaries[i]>heighest){
+   heighest=salaries[i];
+}
+}
+console.log(heighest);
