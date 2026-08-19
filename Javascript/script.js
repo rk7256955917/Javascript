@@ -5782,16 +5782,68 @@ console.log(arr); */
 //     }
 //     calculateParkingBill(10,15,"Car");
 
-let salaries =[45000,78000,56000,92000,67000,92000,51000];
-let heighest =salaries[0];
-let secondHeighest=salaries[0];
+// let salaries =[45000,78000,56000,92000,67000,92000,51000];
+// let heighest =salaries[0];
+// let secondHeighest=salaries[0];
 
-for(let i=0;i<salaries.length;i++){
-    if(salaries[i]>heighest){
-   heighest = salaries[i];
+// for(let i=0;i<salaries.length;i++){
+//     if(salaries[i]>heighest){
+//    heighest = salaries[i];
+// }
+// else if(salaries[i]>secondHeighest && salaries[i]<heighest){
+//      secondHeighest=heighest;
+// }
+// }
+// console.log(heighest,secondHeighest);
+
+
+// for(let i=0;i<=4;i++){
+//     if(i===2){
+//      continue;
+//     }
+//    console.log(i);
+// }
+
+// let array=[1,3,5,7,8,9,11];
+// let left = 0;
+// let right=array.length-1;
+// let target =10;
+// while(right>0){
+//     if(array[left]+array[right]===10){
+//         console.log(array[left]+"+"+array[right]+"="+target);
+//         break;
+//     }
+//     left++;
+//     if(left===right){
+//         left=0;
+//         right--;
+
+//     }
+// }
+
+// let n=5;
+// for(let i=1;i<=5;i++){
+//     let row="";
+//  for(let j=1;j<=n;j++){
+//     row+="*";
+//  }
+//  console.log(row);
+// }
+
+// let n=5;
+// for(let i=1;i<=n;i++){
+//     row="";
+//     for(let j=1;j<=i;j++){
+//         row+=j;
+//     }
+//     console.log(row);
+// }
+
+let n=5;
+for(let i=1;i<=n;i++){
+    row="";
+    for(let j=1;j<=i;j++){
+        row+=i;
+    }
+    console.log(row);
 }
-else if(salaries[i]>secondHeighest && salaries[i]<heighest){
-     secondHeighest=heighest;
-}
-}
-console.log(heighest,secondHeighest);
